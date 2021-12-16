@@ -61,15 +61,7 @@ header img[src~="burger-menu"] {
   left: -1.25rem;
   width: 85%;
   background-color: white;
-}
-
-.nav-open div:first-child {
-  position: absolute;
-  z-index: -1;
-  left: 35%;
-  width: 100%;
-  height: 100%;
-  background-color: #F4F4F4;
+  z-index: 1;
 }
 
 header nav ul li {
@@ -497,32 +489,23 @@ footer nav ul + ul li {
 }
 
 /* main */
-.pie-background {
-  background: url(../img/pie-background-mobile.png) center center no-repeat;
-  background-size: cover;
-  position: relative;
-  bottom: 2.4rem;
-  z-index: -3;
-}
 
-.pie-background div {
-  padding: 11.6875rem 0 0 0;
-}
 
 .landing-sale h1,
-.landing-sale h2 {
+.landing-sale h2,
+.landing-sale h3 {
   text-align: center;
-  margin: 0 auto;
-  line-height: 1.875rem;
 }
 
 .landing-sale h1 {
-  padding: 2.9375rem 0 0 0;
+  padding: 12rem 0 0;
   font-family: "LifehackSansRegular", sans-serif;
   font-size: 1.5625rem;
   color: #F3B366;
   font-style: normal;
   font-weight: normal;
+  line-height: 1.875rem;
+  margin: 0;
 }
 
 .landing-sale h2 {
@@ -531,18 +514,298 @@ footer nav ul + ul li {
   color: #B52B65;
   font-style: normal;
   font-weight: normal;
+  line-height: 1.875rem;
+}
+
+.landing-sale h3 {
+  margin: 0.375rem 0 0;
+  color: #621055;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  letter-spacing: 0.01em;
 }
 
 
 .landing-sale {
-  background: url(../img/gradient-background.png) center center repeat;
+  background: url(../img/pie-background-mobile.png) center repeat-x;
   transform: rotateX(90);
-  background-size: content;
+  background-size: cover;
   position: relative;
-  height: 327px;
-  bottom: 6.2rem;
-  z-index: -2;
 }
+
+.landing-sale input {
+  padding: 0.8125rem 2.5625rem;
+  margin: 0.875rem auto 0;
+  display: block;
+  border-radius: 3.3125rem;
+  border: none;
+  background: #621055;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  color: #F4F4F4;
+  cursor: pointer;
+}
+
+.landing-sale .bottom-margin {
+  padding: 4.5rem 0 0;
+}
+
+.landing-sale .slider {
+  margin: 0 auto;
+  background: #B52B65;
+  border-radius: 15px;
+  position: absolute;
+  bottom: -2.45rem;
+  right: 6.5%;
+  left: 6.5%;
+  cursor: pointer;
+  width: 17.5rem;
+}
+
+.landing-sale .slider-link {
+  display: block;
+  padding: 1rem 1.5rem;
+}
+
+.slider p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #FCFCFC;
+}
+
+.slider p:last-child {
+  font-weight: 300;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  margin: 0.3125rem 0 0;
+}
+
+.slider-closed {
+  display: none;
+}
+
+.left-slider-button,
+.right-slider-button {
+  bottom: 1.85rem;
+  position: absolute;
+  cursor: pointer;
+}
+
+.left-slider-button {
+  left: -12px;
+}
+
+.right-slider-button {
+  right: -12px;
+  transform: rotate(180deg);
+}
+
+.slider a {
+  cursor: pointer;
+}
+
+.landing-catalog h1,
+.articles h1 {
+  font-family: "LifehackSansRegular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #621055;
+  padding: 0 0 0.3125rem;
+}
+
+.landing-catalog h1 {
+  margin: 4.375rem 0 0;
+}
+
+.landing-cards-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.landing-cards-wrapper a {
+  display: block;
+  height: 6.25rem;
+  width: 17.5rem;
+  position: relative;
+  margin: 0.625rem 0 0;
+  text-decoration: none;
+}
+
+.sweet-card {
+  background-image: url('../img/sweet-card-mobile.png');
+}
+
+.fat-card {
+  background-image: url('../img/fat-card-mobile.png');
+}
+
+.morse-card {
+  background-image: url('../img/morse-card-mobile.png');
+}
+
+.pie-card {
+  background-image: url('../img/pie-card-mobile.png');
+}
+
+.landing-cards-wrapper p {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 0.6rem;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  letter-spacing: 0.01em;
+}
+
+.advantages {
+  margin: 0 6.25%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.advantages div {
+  margin: 1.625rem 0 0;
+  width: 8.375rem;
+}
+
+.advantages img {
+  display: block;
+  margin: 0 auto;
+} 
+
+.advantages p {
+  font-family: "LifehackSansRegular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #B52B65;
+  margin: 0.625rem 0 0;
+}
+
+
+.articles h1 {
+  margin: 1.875rem 0 0;
+}
+
+.articles a {
+  background: #F4F4F4;
+  border-radius: 15px;
+}
+
+.articles .helth-card::after {
+  content: url(../img/helth-card.png);
+}
+
+.articles .recipe-card::after {
+  content: url(../img/recipe-card.png);
+}
+
+.articles .advantage-card::after {
+  content: url(../img/advantage-card.png);
+}
+
+.helth-card p,
+.recipe-card p,
+.advantage-card p {
+  left: 7.0625rem;
+  top: 0.75rem;
+  color: #B52B65;
+}
+
+.email-form {
+  margin: 1.875rem 0 0;
+  padding: 0.875rem 6%;
+  background: #FBFBFB;
+}
+
+.email-form h2,
+.email-form p {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #B52B65;
+}
+
+.email-form h2 {
+  font-family: "LifehackBasicRegular";
+  font-size: 1.375rem;
+}
+
+.email-form p {
+  font-family: "Raleway";
+  font-size: 0.875rem;
+}
+
+.email-form input[type="text"] {
+  background: #F4F4F4;
+  border: 2px solid #621055;
+  border-radius: 53px;
+  padding: 1rem 0 1rem 1.375rem;
+  width: 17.5rem;
+  margin: 0.625rem auto 0;
+  display: block;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  color: #443E3E;
+}
+
+.email-form input[type="submit"] {
+  width: 9.375rem;
+  padding: 0.8125rem;
+  margin: 1rem auto 0;
+  display: block;
+  background: #621055;
+  border-radius: 3.3125rem;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  text-align: center;
+  color: #F4F4F4;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
