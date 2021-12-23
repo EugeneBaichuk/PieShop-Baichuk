@@ -1,0 +1,414 @@
+@import url(../../../project/css/style.css);
+@import url(../button/button.css);
+
+@font-face {
+  font-family: "LifehackSansRegular";
+  src: url("../main-screen/fonts/LifehackSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "LifehackBasicRegular";
+  src: url("../main-screen/fonts/LifehackBasicRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+:root {
+  --header-background-color: var(--grey);
+  --burger-background-color: var(--white);
+  --header-item-color: var(--purple);
+  --header-text-color: var(--pink);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  font-variant-numeric: lining-nums;
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'Raleway',
+  sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-screen {
+  margin: 3.125rem 0 0;
+}
+
+.pie-shop-adv_desctop {
+  display: none;
+}
+
+.main-screen_align_text {
+  text-align: center;
+}
+
+.pie-shop-adv {
+  width: 14rem;
+  margin: 0 auto;
+}
+
+.pie-shop-adv__header {
+  padding: 12rem 0 0;
+  font-family: "LifehackSansRegular", sans-serif;
+  font-size: 1.5625rem;
+  color: #F3B366;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.875rem;
+}
+
+.pie-shop-adv__paragraph {
+  font-family: "LifehackBasicRegular", sans-serif;
+  font-size: 1.875rem;
+  color: #B52B65;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.875rem;
+}
+
+.pie-shop-adv__small-paragraph {
+  margin: 0.375rem 0 0;
+  color: #621055;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  letter-spacing: 0.01em;
+}
+
+.main-screen {
+  background: url(../img/pie-background-mobile.png) center;
+  background-size: cover;
+  position: relative;
+}
+
+.main-screen__button {
+display: block;
+margin: 0.875rem auto 0;
+background: #621055;
+}
+
+@keyframes main-screen__button {
+  from { 
+    font-size: 100%;
+    filter: grayscale(.8);
+  }
+  50% { 
+    font-size: 110%;
+    filter: grayscale(0);
+  }
+  to { 
+    font-size: 100%;
+    filter: grayscale(0.8);
+  }
+}
+
+@keyframes main-screen__button-text {
+  from {
+    font-size: 80%;
+    opacity: 100%;
+  }
+
+  50% {
+    font-size: 100%;
+    opacity: 100%;
+  }
+
+  to {
+    font-size: 80%;
+    opacity: 100%;
+  }
+}
+
+.pie-shop-adv__small-paragraph_disp_none {
+  opacity: 0;
+}
+
+.main-screen__button:hover {
+  animation: main-screen__button 2s infinite ease;
+}
+
+.main-screen__button:hover + .pie-shop-adv__small-paragraph_disp_none {
+  animation: main-screen__button-text 2s infinite ease;
+}
+
+.main-screen__block {
+  padding: 4.5rem 0 0;
+}
+
+.main-screen__slider {
+  width: 17.5rem;
+  position: absolute;
+  margin: 0 auto;
+  bottom: -2.45rem;
+  right: 6.5%;
+  left: 6.5%;
+  cursor: pointer;
+}
+
+.main-screen__slider-desctop {
+  display: none;
+}
+
+.slider__link,
+.slider__link-inner {
+  border-radius: 15px;
+  display: block;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  background: #B52B65;
+  margin: 0 auto;
+}
+
+.slider__link-inner {
+  background:#621055;
+}
+
+.slider__content {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #FCFCFC;
+}
+
+.slider__content_more {
+  font-weight: 300;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  margin: 0.3125rem 0 0;
+}
+
+.slider__link_disabled {
+  display: none;
+}
+
+.slider__button-left,
+.slider__button-right {
+  bottom: 1.85rem;
+  position: absolute;
+  cursor: pointer;
+}
+
+.slider__button-left {
+  left: -12px;
+}
+
+.slider__button-right {
+  right: -12px;
+  transform: rotate(180deg);
+}
+
+@media screen and (min-width: 35rem) {
+  .main-screen {
+    background: url(img/pie-background-desc.png) center;
+    background-size: cover;
+  }
+
+  .pie-shop-adv {
+    width: 100%;
+  }
+
+  .pie-shop-adv__header {
+    padding: 3.125rem 0 0;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .pie-shop-adv__paragraph {
+    font-size: 4.375rem;
+    line-height: 4.375rem;
+  }
+
+  .pie-shop-adv__small-paragraph {
+    margin: 1.4375rem 0 0;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+  }
+
+  .main-screen__button {
+    margin: 2.5rem auto 0;
+    padding: 0.875rem 4rem;
+    font-size: 1.25rem;
+    line-height: 1.4375rem;
+  }
+
+  .pie-shop-adv__small-paragraph {
+    margin: 1.4375rem 0 0;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .main-screen__block {
+    padding: 28.125rem 0 0;
+  }
+
+  .main-screen__slider {
+    display: none;
+  }
+
+  .main-screen__slider-desctop {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    bottom: -4.4rem;
+    margin: 0 1rem;
+  }
+
+  .slider__content {
+    font-size: 24px;
+    line-height: 28px;  
+  }
+
+
+  .slider__content_more {
+    font-size: 16px;
+    line-height: 19px;
+    transition: 0.2s ease-out 0.1s;
+  }
+
+  .slider__link {
+    padding: 2rem;
+    width: 48%;
+    margin: 1rem;
+  }
+
+  .slider__link_type_animated {
+    transition: 0.2s linear;
+  }
+
+  .slider__link:hover .slider__link_type_animated {
+    opacity: 0;
+  }
+
+  .slider__link:hover {
+    box-shadow: inset 0 0 0 4px #621055;
+    opacity: .97;
+  }
+
+  .slider__link_type_bg-changed:hover {
+    box-shadow: inset 0 0 0 4px #B52B65;
+    opacity: .97;
+  }
+
+  .slider__link:hover .slider__content_type_animated-1,
+  .slider__link:hover .slider__content_type_animated-2 {
+    position: relative;
+    bottom: 20px;
+    font-size: 2rem;
+  }
+
+  .slider__link_type_bg-changed {
+    background:#621055
+  }
+}
+
+@media screen and (min-width: 46rem) {
+  .main-screen {
+    margin: 5.7rem 0 0;
+  }
+}
+
+.advantages {
+  margin: 3.125rem 6.25% 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.advantages__container {
+  margin: 1.625rem 0 0;
+  padding: 1px 0 0;
+  width: 8.375rem;
+  
+}
+
+.advantages__bg {
+  width: 100%;
+  height: 5rem;
+}
+
+.advantages__bg_donuts {
+  background: url(img/donuts.svg) center no-repeat;
+}
+
+.advantages__bg_oven {
+  background: url(img/oven.svg) center no-repeat;
+}
+
+.advantages__bg_cake {
+  background: url(img/cake.svg) center no-repeat;
+}
+
+.advantages__bg_bread {
+  background: url(img/bread.svg) center no-repeat;
+}
+
+.advantages__name {
+  font-family: "LifehackSansRegular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #B52B65;
+}
+
+@media (min-width: 28.75rem) {
+  .advantages {
+    margin: 3.125rem 15% 0;
+  }
+}
+
+@media screen and (min-width: 35rem) {
+  .advantages {
+    margin: 6.9375rem 0 0;
+  }
+
+  .advantages__bg {
+    transition: 0.3s ease;
+  }
+
+  .advantages__bg:hover {
+    transform: translate(0, -15px) scale(1.2);
+    cursor: pointer;
+  }
+
+  .advantages__bg_donuts {
+    background: url(img/donuts-desc.svg) center no-repeat;
+  }
+
+  .advantages__bg_oven {
+    background: url(img/oven-desc.svg) center no-repeat;
+  }
+
+  .advantages__bg_cake {
+    background: url(img/cake-desc.svg) center no-repeat;
+  }
+
+  .advantages__bg_bread {
+    background: url(img/bread-desc.svg) center no-repeat;
+  }
+
+  .advantages__name {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+}
+
+
