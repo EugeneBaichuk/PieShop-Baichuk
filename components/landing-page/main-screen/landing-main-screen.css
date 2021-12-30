@@ -333,8 +333,7 @@ background: #621055;
 .advantages__container {
   margin: 1.625rem 0 0;
   padding: 1px 0 0;
-  width: 8.375rem;
-  
+  width: 8.375rem; 
 }
 
 .advantages__bg {
@@ -376,7 +375,8 @@ background: #621055;
 
 @media screen and (min-width: 35rem) {
   .advantages {
-    margin: 6.9375rem 0 0;
+    justify-content: space-around;
+    margin: 6.93rem 0 0;
   }
 
   .advantages__bg {
@@ -411,4 +411,11 @@ background: #621055;
 
 }
 
+@media screen and (min-width: 62rem) {
+  .advantages {
+    justify-content: space-between;
+    margin: 6.93rem auto 0;
+    max-width: 72.5rem;
+  }
+}
 

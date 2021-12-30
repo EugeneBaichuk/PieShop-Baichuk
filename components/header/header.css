@@ -1,4 +1,4 @@
-@import url(../../project/css/style.css);
+@import url(../../css/style.css);
 
 :root {
   --header-background-color: var(--grey);
@@ -88,10 +88,9 @@
   left:0;
   width: 100%;
   height: 24.125rem;
-  background-color: var(--gray);
+  background-color: var(--header-background-color);
   z-index: 59;
   cursor: pointer;
-
 }
 
 @media (min-width: 22.5rem) {

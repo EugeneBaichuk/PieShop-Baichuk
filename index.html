@@ -102,44 +102,49 @@
     </section>
 
     <section class="landing-catalog">
-      <h1>в нашем каталоге</h1>
-      <div class="landing-cards-wrapper" >
-        <a class ="sweet-card" href="#">
-        <p>Сладкие пироги</p>
+      <h1 class="block-header landing-catalog__block-header">в нашем каталоге</h1>
+      <div class="landing-cards" >
+        <a class ="landing-card landing-card_bg_sweet" href="#">
+        <p class="landing-card__label">Сладкие пироги</p>
         </a>
-        <a class ="fat-card" href="#">
-        <p>Сытные пироги</p>
+        <a class ="landing-card landing-card_bg_fat" href="#">
+        <p class="landing-card__label">Сытные пироги</p>
         </a>
-        <a class ="morse-card" href="#">
-        <p>Морсы</p>
+        <a class ="landing-card landing-card_bg_morse" href="#">
+        <p class="landing-card__label">Морсы</p>
         </a>
-        <a class ="pie-card" href="#">
-        <p>Пирожки</p>
+        <a class ="landing-card landing-card_bg_pie" href="#">
+        <p class="landing-card__label">Пирожки</p>
         </a>
       </div>
     </section>
+
     <section class="articles">
-      <h1>Статьи</h1>
-      <div class="landing-cards-wrapper" >
-        <a class ="helth-card" href="#">
-        <p>5 полезных для <br>здоровья веществ, <br>которые есть <br>в морсах</p>
+      <h1 class="block-header articles__block-header">Статьи</h1>
+      <div class="landing-cards landing-cards__articles">
+        <a class ="landing-card landing-card__articles landing-card__first-article landing-card_bg_health" href="#">
+        <p class="landing-card__text">5 полезных для <br>здоровья веществ, <br>которые есть <br>в морсах</p>
         </a>
-        <a class ="recipe-card" href="#">
-        <p>Как приготовить <br>пирог «Маргарита» <br>у себя дома</p>
+        <a class ="landing-card landing-card__articles
+         landing-card_bg_recipe" href="#">
+        <p class="landing-card__text">Как приготовить <br>пирог «Маргарита» <br>у себя дома</p>
         </a>
-        <a class ="advantage-card" href="#">
-        <p>Почему наши <br>пироги <br>самые лучшие?</p>
+        <a class ="landing-card landing-card__articles landing-card_bg_advantage
+        landing-card__last-article" href="#">
+        <p class="landing-card__text">Почему наши <br>пироги <br>самые лучшие?</p>
         </a>
       </div>
     </section>
-    <section class="email-form">
-      <h2>Подпишитесь на нашу рассылку</h2>
-      <p>и первым узнавайте об акциях и скидках!</p>
-      <form action="submit">
-        <input type="text" value="Введите вашу почту">
-        <input type="submit">
+
+    
+    <div class="email-bg">
+      <form action="submit" class="email-form">
+          <h2 class="e-mail-form__header e-mail-form__header_font_basic">Подпишитесь на нашу рассылку</h2>
+          <p class="e-mail-form__header e-mail-form__header_font_regular">и первым узнавайте об акциях и скидках!</p>
+          <input class="email-form__input-text" type="text" name="e-mail" value="Введите ваш e-mail"> 
+          <input class="email-form__input-button" type="submit">
       </form>
-    </section>
+    </div>
     </main>
     
     <footer class="footer">
@@ -154,7 +159,7 @@
             <a class="footer__logo-item footer__logo-social_logo-mob" href="index.html"><img src="components/footer/img/footer-logo.svg" alt="logo"></a>
             <div class="footer__social-items footer__logo-social_social-mob">
               <a class="footer__social-item" href="#"><img class="footer__social-item" src="components/footer/img/vk-footer.svg" alt="vk-social"></a>
-              <a class="footer__social-item footer__social-item_position" href="#"><img class="footer__social-item" src="../components/footer/img/fb-footer.svg" alt="fb-social"></a>
+              <a class="footer__social-item footer__social-item_position" href="#"><img class="footer__social-item" src="components/footer/img/fb-footer.svg" alt="fb-social"></a>
               <a class="footer__social-item" href="#"><img class="footer__social-item" src="components/footer/img/inst-footer.svg" alt="vk-social"></a>
             </div>
           </div>
@@ -180,7 +185,7 @@
           <a class="footer__logo-item footer__logo-social_logo-desc" href="index.html"><img class="footer__logo-item" src="components/footer/img/footer-logo.svg" alt="logo"></a>
           <div class="footer__social-items">
             <a class="footer__social-item" href="#"><img class="footer__social-item" src="components/footer/img/vk-footer.svg" alt="vk-social"></a>
-            <a class="footer__social-item footer__social-item_position" href="#"><img class="footer__social-item" src="../components/footer/img/fb-footer.svg" alt="fb-social"></a>
+            <a class="footer__social-item footer__social-item_position" href="#"><img class="footer__social-item" src="components/footer/img/fb-footer.svg" alt="fb-social"></a>
             <a class="footer__social-item" href="#"><img class="footer__social-item" src="components/footer/img/inst-footer.svg" alt="vk-social"></a>
           </div>
         </div>
