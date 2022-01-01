@@ -1,25 +1,38 @@
-@import url(../../../project/css/style.css);
+@import url(../../css/style.css);
 @import url(../button/button.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Raleway&display=swap');
 
 @font-face {
   font-family: "LifehackSansRegular";
-  src: url("../main-screen/fonts/LifehackSansRegular.ttf") format("truetype");
+  src: url("../landing-page/fonts/LifehackSansRegular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "LifehackBasicRegular";
-  src: url("../main-screen/fonts/LifehackBasicRegular.ttf") format("truetype");
+  src: url("../fonts/LifehackBasicRegular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 :root {
-  --header-background-color: var(--grey);
-  --burger-background-color: var(--white);
-  --header-item-color: var(--purple);
-  --header-text-color: var(--pink);
+  --landing-header-color: var(--purple);
+  --landing-button-color: var(--purple);
+  --landing-slider-link-color: var(--pink);
+  --landing-advantages-name-color: var(--pink);
+  --landing-news-name-color: var(--pink);
+  --landing-card-bg: #FCFCFC;
+  --main-screen-small-text-color: var(--purple);
+  --main-screen-text-color: var(--pink);
+  --main-screen-header-color: #F3B366;
+  --email-header-color: var(--pink);
+  --email-form-bg: #FBFBFB;
+  --hover-shadow-color: var(--purple);
+  --border-color: var(--purple);
+  --email-form-input-text-color: #443E3E;
+  --landing-button-text-color: #F4F4F4;
 }
 
 * {
@@ -62,7 +75,7 @@ a {
   padding: 12rem 0 0;
   font-family: "LifehackSansRegular", sans-serif;
   font-size: 1.5625rem;
-  color: #F3B366;
+  color: var(--main-screen-header-color);
   font-style: normal;
   font-weight: normal;
   line-height: 1.875rem;
@@ -71,7 +84,7 @@ a {
 .pie-shop-adv__paragraph {
   font-family: "LifehackBasicRegular", sans-serif;
   font-size: 1.875rem;
-  color: #B52B65;
+  color: var(--main-screen-text-color);
   font-style: normal;
   font-weight: normal;
   line-height: 1.875rem;
@@ -79,7 +92,7 @@ a {
 
 .pie-shop-adv__small-paragraph {
   margin: 0.375rem 0 0;
-  color: #621055;
+  color: var(--main-screen-small-text-color);
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -89,7 +102,7 @@ a {
 }
 
 .main-screen {
-  background: url(../img/pie-background-mobile.png) center;
+  background: url(img/pie-background-mobile.png) center;
   background-size: cover;
   position: relative;
 }
@@ -97,7 +110,7 @@ a {
 .main-screen__button {
 display: block;
 margin: 0.875rem auto 0;
-background: #621055;
+background: var(--landing-button-color);
 }
 
 @keyframes main-screen__button {
@@ -168,12 +181,12 @@ background: #621055;
   display: block;
   padding: 1rem 1.5rem;
   cursor: pointer;
-  background: #B52B65;
+  background: var(--landing-slider-link-color);
   margin: 0 auto;
 }
 
 .slider__link-inner {
-  background:#621055;
+  background: var(--landing-button-color);
 }
 
 .slider__content {
@@ -183,7 +196,7 @@ background: #621055;
   line-height: 1.1875rem;
   text-align: center;
   letter-spacing: 0.01em;
-  color: #FCFCFC;
+  color: var(--landing-card-bg);
 }
 
 .slider__content_more {
@@ -274,7 +287,6 @@ background: #621055;
     line-height: 28px;  
   }
 
-
   .slider__content_more {
     font-size: 16px;
     line-height: 19px;
@@ -296,12 +308,12 @@ background: #621055;
   }
 
   .slider__link:hover {
-    box-shadow: inset 0 0 0 4px #621055;
+    box-shadow: inset 0 0 0 4px var(--landing-button-color);
     opacity: .97;
   }
 
   .slider__link_type_bg-changed:hover {
-    box-shadow: inset 0 0 0 4px #B52B65;
+    box-shadow: inset 0 0 0 4px var(--landing-slider-link-color);
     opacity: .97;
   }
 
@@ -313,7 +325,7 @@ background: #621055;
   }
 
   .slider__link_type_bg-changed {
-    background:#621055
+    background: var(--landing-button-color);
   }
 }
 
@@ -364,7 +376,7 @@ background: #621055;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  color: #B52B65;
+  color: var(--landing-advantages-name-color);
 }
 
 @media (min-width: 28.75rem) {
@@ -419,3 +431,255 @@ background: #621055;
   }
 }
 
+.block-header {
+  font-family: "LifehackSansRegular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--hover-shadow-color);
+  padding: 0 0 0.3125rem;
+}
+
+.landing-catalog__block-header {
+  margin: 4.375rem 0 0;
+}
+
+.landing-cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.landing-card {
+  display: block;
+  height: 6.25rem;
+  width: 17.5rem;
+  position: relative;
+  margin: 0.625rem 0 0;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.landing-card_bg_sweet {
+  background-image: url('img/sweet-card-mobile.png');
+}
+
+.landing-card_bg_fat {
+  background-image: url('img/fat-card-mobile.png');
+}
+
+.landing-card_bg_morse {
+  background-image: url('img/morse-card-mobile.png');
+}
+
+.landing-card_bg_pie {
+  background-image: url('img/pie-card-mobile.png');
+}
+
+.landing-card__label {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 0.6rem;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  letter-spacing: 0.01em;
+}
+
+@media (min-width: 46rem) {
+  .landing-cards {
+    justify-content: center;
+    max-width: 76rem;
+    margin: 1.5625rem auto 0;
+  }
+
+  .block-header {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .landing-card {
+    width: 46.7%;
+    height: 21.875rem;
+    max-width: 37.375rem;
+    border-radius: 43px;
+    margin: 0 0.625rem 1.25rem;
+  }
+
+  .landing-card:hover {
+    box-shadow: inset 0 0 0 2px var(--hover-shadow-color);
+  }
+
+  .landing-card_bg_sweet {
+    background-image: url('img/sweet-card.png');
+  }
+
+  .landing-card_bg_fat {
+    background-image: url('img/fat-card.png');
+  }
+
+  .landing-card_bg_morse {
+    background-image: url('img/morse-card.png');
+  }
+
+  .landing-card_bg_pie {
+    background-image: url('img/pie-card.png');
+  }
+
+  .landing-card__label {
+    bottom: 1.875rem;
+    left: 1.875rem;
+    font-size: 1.5rem;
+  }
+}
+
+.articles__block-header {
+  margin: 1.875rem 0 0;
+}
+
+.landing-card_bg_health {
+  background: url(img/helth-card-mobile.png) no-repeat,
+  var(--landing-card-bg);
+}
+
+.landing-card_bg_recipe {
+  background: url(img/recipe-card-mobile.png) no-repeat,
+  var(--landing-card-bg);
+}
+
+.landing-card_bg_advantage {
+  background: url(img/advantage-card-mobile.png) no-repeat,
+  var(--landing-card-bg);
+}
+
+.landing-card__text {
+  padding: 12px 12px 0 113px;
+  color: var(--landing-news-name-color);
+}
+
+@media (min-width: 46rem) {
+  .landing-cards__articles {
+    flex-flow: nowrap;
+  }
+
+  .landing-card__articles {
+    flex-flow: nowrap;
+    max-width: 24.5rem;
+    height: 27rem;
+    margin: 0;
+  }
+
+  .landing-card__first-article {
+    margin: 0 20px 0 0;
+  }
+
+  .landing-card__last-article {
+    margin: 0 0 0 20px;
+  }
+
+  .landing-card_bg_health {
+    background: url(img/helth-card.png) top center no-repeat,
+    var(--landing-card-bg);
+  }
+
+  .landing-card_bg_recipe {
+    background: url(img/recipe-card.png) top center no-repeat,
+    var(--landing-card-bg);
+  }
+
+  .landing-card_bg_advantage {
+    background: url(img/advantage-card.png) top center no-repeat,
+    var(--landing-card-bg);
+  }
+
+  .landing-card__text {
+    padding: 286px 30px 30px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 63rem) {
+  .landing-card__articles {
+    height: 24.5rem;
+  }
+}
+
+.email-form {
+  margin: 1.875rem 0 0;
+  padding: 0.875rem 6%;
+  background: var(--email-form-bg);
+}
+
+.e-mail-form__header {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: var(--email-header-color);
+}
+
+.e-mail-form__header_font_basic {
+  font-family: "LifehackBasicRegular";
+  font-size: 1.375rem;
+}
+
+.e-mail-form__header_font_regular {
+  font-family: "Raleway";
+  font-size: 0.875rem;
+}
+
+.email-form__input-text {
+  background: var(--landing-card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 53px;
+  padding: 1rem 0 1rem 1.375rem;
+  width: 17.5rem;
+  margin: 0.625rem auto 0;
+  display: block;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  color: var(--email-form-input-text-color);
+}
+
+.email-form__input-button {
+  width: 9.375rem;
+  padding: 0.8125rem;
+  margin: 1rem auto 0;
+  display: block;
+  background: var(--landing-button-color);
+  border-radius: 3.3125rem;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  text-align: center;
+  color: var(--landing-button-text-color);
+  border: none;
+}
+
+@media (min-width: 46rem) {
+  .email-bg {
+    width: 100%;
+    height: 428px;
+    background: url(img/email-bg.png) center no-repeat;
+    margin: 30px 0 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .email-form {
+    margin: 0;
+  }
+}
