@@ -1,0 +1,14 @@
+.button {
+  display: inline-block;
+  padding: 0.8125rem 2.5625rem;
+  border-radius: 3.3125rem;
+  border: none;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  background: #F4F4F4;
+  color: #F4F4F4;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'Raleway', sans-serif;
+}
