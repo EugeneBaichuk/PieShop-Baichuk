@@ -1,5 +1,4 @@
 @import url(../../css/style.css);
-@import url(../button/button.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Raleway&display=swap');
 
@@ -23,16 +22,16 @@
   --landing-slider-link-color: var(--pink);
   --landing-advantages-name-color: var(--pink);
   --landing-news-name-color: var(--pink);
-  --landing-card-bg: #FCFCFC;
+  --landing-card-bg: var(--light-grey);
   --main-screen-small-text-color: var(--purple);
-  --main-screen-text-color: var(--pink);
-  --main-screen-header-color: #F3B366;
+  --main-header-color: var(--pink);
+  --main-screen-header-color: var(--orange);
   --email-header-color: var(--pink);
-  --email-form-bg: #FBFBFB;
+  --email-form-bg: var(--light-grey);
   --hover-shadow-color: var(--purple);
   --border-color: var(--purple);
-  --email-form-input-text-color: #443E3E;
-  --landing-button-text-color: #F4F4F4;
+  --email-form-input-text-color: var(--brown-grey);
+  --landing-button-text-color: var(--light-grey);
 }
 
 * {
@@ -84,7 +83,7 @@ a {
 .pie-shop-adv__paragraph {
   font-family: "LifehackBasicRegular", sans-serif;
   font-size: 1.875rem;
-  color: var(--main-screen-text-color);
+  color: var(--main-header-color);
   font-style: normal;
   font-weight: normal;
   line-height: 1.875rem;

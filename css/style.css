@@ -1,6 +1,7 @@
 @import url(../components/header/header.css);
 @import url(../components/footer/footer.css);
 @import url(../components/landing-page/landing-main-screen.css);
+@import url(../components/catalog/catalog.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Raleway&display=swap');
 
@@ -24,6 +25,9 @@
   --white: #FFF;
   --purple: #621055;
   --pink: #B52B65;
+  --orange: #F3B366;
+  --light-grey: #FCFCFC;
+  --brown-grey: #443E3E;
 }
 
 * {
