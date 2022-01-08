@@ -1,0 +1,58 @@
+
+.form {
+  margin: 1.875rem 0 0;
+  padding: 0.875rem 6%;
+  background: var(--email-form-bg);
+}
+
+.form__header {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: var(--email-header-color);
+}
+
+.form__header_font_basic {
+  font-family: "LifehackBasicRegular";
+  font-size: 1.375rem;
+}
+
+.form__header_font_regular {
+  font-family: "Raleway";
+  font-size: 0.875rem;
+}
+
+.form__input-text {
+  background: var(--landing-card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 53px;
+  padding: 1rem 0 1rem 1.375rem;
+  width: 17.5rem;
+  margin: 0.625rem auto 0;
+  display: block;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  color: var(--email-form-input-text-color);
+}
+
+.form__input-button {
+  width: 9.375rem;
+  padding: 0.8125rem;
+  margin: 1rem auto 0;
+  display: block;
+  background: var(--landing-button-color);
+  border-radius: 3.3125rem;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  text-align: center;
+  color: var(--landing-button-text-color);
+  border: none;
+}

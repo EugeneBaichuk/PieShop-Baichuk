@@ -1,0 +1,16 @@
+.page-header {
+  font-family: "LifehackBasicRegular", sans-serif;
+  font-size: 1.875rem;
+  color: var(--main-header-color);
+  line-height: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (min-width: 26rem) {
+  .page-header {
+    font-size: 4.375rem;
+  }
+}

@@ -1,26 +1,12 @@
 @import url(../../css/style.css);
+@import url(../page-header/page-header.css);
 @import url(../header/header.css);
 @import url(../footer/footer.css);
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Raleway&display=swap');
-
-@font-face {
-  font-family: "LifehackSansRegular";
-  src: url("../landing-page/fonts/LifehackSansRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "LifehackBasicRegular";
-  src: url("../landing-page/fonts/LifehackBasicRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
+@import url(../card/card.css);
 
 :root {
   --landing-header-color: var(--purple);
-  --landing-button-color: var(--purple);
+  
   --landing-slider-link-color: var(--pink);
   --landing-advantages-name-color: var(--pink);
   --landing-news-name-color: var(--pink);
@@ -37,25 +23,12 @@
 
   --catalog-nav-color: var(--purple);
   --catalog-card-bg-color: var(--light-grey);
+  --catalog-button-color: var(--purple);
+  --catalog-button-mobile-text-color: var(--grey);
 }
 
 .catalog {
   margin: 4.375rem auto 0;
-}
-
-.catalog__header {
-  font-family: "LifehackBasicRegular", sans-serif;
-  font-size: 1.875rem;
-  color: var(--main-header-color);
-  line-height: 100%;
-  font-style: normal;
-  font-weight: normal;
-  font-weight: 400;
-  text-align: center;
-}
-
-.catalog-nav {
-  margin: 0 6.25%;
 }
 
 .catalog-nav__button {
@@ -63,7 +36,7 @@
   position: relative;
   padding: 0.125rem 0;
   background: #621055;
-  box-shadow: inset 0 0 0 2px var(--landing-button-color);
+  box-shadow: inset 0 0 0 2px var(--catalog-button-color);
   border-radius: 15px;
   font-family: "Lifehack Sans", sans-serif;
   font-style: normal;
@@ -71,7 +44,7 @@
   font-size: 25px;
   line-height: 30px;
   text-align: center;
-  color: #F4F4F4;
+  color: var(--catalog-button-mobile-text-color);
   width: 18rem;
   max-width: 18rem;
   margin: 0 auto;
@@ -82,8 +55,9 @@
   width: 12.4px;
   height: 6.2px;
   position: absolute;
+  transform: translate(-50%, -50%);
   top: 50%;
-  right: 30%;
+  right: 25%;
 }
 
 .catalog-nav__button_disabled {
@@ -147,10 +121,6 @@
     margin: 7.5rem auto 0;
     max-width: 76rem;
   }
-
-  .catalog__header {
-    font-size: 4.375rem;
-  }
 }
 
 .card-wrapper {
@@ -167,37 +137,8 @@
   }
 }
 
-.card {
-  position: relative;
-  width: 18rem;
-  border: 1px solid rgba(0, 0, 0, .125);
-  border-radius: 0.9375rem;
-  background: #F4F4F4;
+.card-wrapper__card {
   margin: 31px 0 0;
-}
-
-.card__img {
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
-  flex-shrink: 0;
-  width: 100%;
-}
-
-.card__body {
-  flex: 1 1 auto;
-  min-height: 1px;
-  padding: .625rem;
-}
-
-.card__title {
-  margin: 0.6875rem auto 0;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.375rem;
-  line-height: 1.625rem;
-  color: #621055;
-  min-height: 5.5625rem;
 }
 
 .card__btn-price-wrapper {
@@ -251,16 +192,6 @@
   line-height: 1.75rem;
 }
 
-.card__text {
-  color: #F4F4F4;
-  font-family: "Raleway",
-  sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.25rem;
-  line-height: 120%;
-}
-
 .card__img_type_sale {
   display: block;
   margin: 2rem 0 0 auto;
@@ -274,9 +205,3 @@
 .catalog-page-wrapper__footer {
   margin: 3.125rem 0 0;
 }
-
-
-
-
-
-

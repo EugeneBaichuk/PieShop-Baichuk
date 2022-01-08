@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../header/img/logo.svg" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="../contacts/contacts.css">
+  <script src="../header/js/script.js" defer></script>
+  <title>Contacts</title>
+</head>
+<body>
+  <div class="contacts-page-wrapper">
+    <header class="header">
+      <a href="#" class="header__burger-menu-link"><img  src="../header/img/burger-menu.svg" alt="burger-menu"></a>
+      <p class="phone phone_type_laptop phone_disabled">+7 (456) 234 36 96</p>
+      <a href="../../index.html" class="logo"><img src="../header/img/logo.svg" alt="logo" class="logo"></a>
+      <div class="header__burger-menu-background nav_disabled"></div>
+      <nav class="nav nav_type_burger nav_disabled">           
+          <ul>
+            <li><a class="nav__item nav__item_type_burger" href="#">Контакты</a></li>
+            <li><a class="nav__item nav__item_type_burger" href="../catalog/catalog.css">Каталог</a></li>
+            <li><a class="nav__item nav__item_type_burger" href="../sales/sales.html">Акции</a></li>
+            <li><a class="nav__item nav__item_type_burger" href="#">Статьи</a></li>
+          </ul>
+          <p class="nav__contacts nav__contacts_type_burger">+7 (456) 234 36 96</p>
+          <p class="nav__adress nav__adress_type_burger">Москва, ул. Мечты, 21</p>
+          <div class="nav__social_type_burger">
+            <img class="nav__burger-social-img" src="../header/img/vk.svg" alt="vk-social">
+            <img class="nav__burger-social-img" src="../header/img/fb.svg" alt="facebook-social">
+            <img class="nav__burger-social-img" src="../header/img/inst.svg" alt="instagram-social">
+          </div>
+          <a href="#"><img class="nav__burger-close-button" src="../header/img/close-button.svg" alt="close-button"></a>
+      </nav>
+      <nav class="nav header__nav"> 
+          <p class="header__adress">Москва, ул. Мечты, 21</p>          
+          <ul class="header__menu">
+            <li class="nav__item header__nav-item"><a class="header__nav-link"  href="#">Контакты</a></li>
+            <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../catalog/catalog.html">Каталог</a></li>
+            <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../sales/sales.html">Акции</a></li>
+            <li class="nav__item header__nav-item"><a class="header__nav-link"  href="#">Статьи</a></li>
+          </ul>
+          <p class="phone header__phone"> +7 (456) 234 36 96 </p>
+      </nav>  
+    </header>
+    <section class="contacts">
+      <h5 class="page-header contacts__page-header">Оформление заказа</h5>
+      <div class="contacts__form-wrapper">
+        <form action="submit" class="form contacts__form">
+          <label class="contacts__form-label"> Ваше имя: <br>
+            <input class="form__input-text contacts__input-text" type="text" name="e-mail" value="Введите ваше имя"> 
+          </label>
+          <label class="contacts__form-label"> Ваш номер телефона: <br>
+            <input class="form__input-text contacts__input-text" type="text" name="e-mail" value="+ 375 (xxx) xxx-xx-xx"> 
+          </label>
+          <input class="form__input-button contacts__input-button" type="submit" value="отправить">
+          <input type="checkbox" id="checkbox" class="contacts__checkbox">
+          <label for="checkbox" class="contacts__checkbox-label"> Cогласие на обработку персональных данных</label> 
+        </form>
+        <div class="contacts__text-blocks-wrapper">
+          <div class="contacts__block">
+            <h5 class="contacts__header">Оплата</h5>
+            <p class="contacts__text">Оплата принимается исключительно в белорусских рублях. Мы будем очень вам благодарны, если вы сэкономите время себе и нашему экспедитору, собрав сумму заказа без сдачи.
+            </p>
+          </div>
+          <div class="contacts__block">
+            <h5 class="contacts__header">Доставка</h5>
+            <p class="contacts__text">Заказы, оформляемые на сайте pirogi.ru, принимаются круглосуточно. После получения заказа менеджер свяжется с вами и уточнит состав заказа, его стоимость, время и адрес доставки. Стоимость доставки 300 ₽, при заказе от 5000 ₽ доставка бесплатна. Среднее время доставки курьером 2 часа.
+            </p>
+          </div>
+        </div>
+       
+      </div>
+
+    </section>
+    
+    <footer class="footer catalog-page-wrapper__footer">
+      <div class="footer__wrapper-mobile">
+        <div class="footer__wrapper-item">
+          <div class="footer__contacts">
+            <h1 class="footer__contacts-item footer__contacts_header footer__contacts_mob">+7 (456) 234 36 96</h1>
+            <p class="footer__contacts-item footer__contacts_mob">pirogi.support@gmail.com</p>
+            <p class="footer__contacts-item footer__contacts_mob">Москва, ул. Мечты, 21</p>
+          </div>
+          <div class="footer__logo-social footer__wrapper-item_mob">
+            <a class="footer__logo-item footer__logo-social_logo-mob" href="../../index.html"><img src="../footer/img/footer-logo.svg" alt="logo"></a>
+            <div class="footer__social-items footer__logo-social_social-mob">
+              <a class="footer__social-item" href="#"><img class="footer__social-item" src="../footer/img/vk-footer.svg" alt="vk-social"></a>
+              <a class="footer__social-item footer__social-item_position" href="#"><img class="footer__social-item" src="../footer/img/fb-footer.svg" alt="fb-social"></a>
+              <a class="footer__social-item" href="#"><img class="footer__social-item" src="../footer/img/inst-footer.svg" alt="vk-social"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__wrapper-item">
+          <a class="footer__input footer__wrapper-item_input-pos" href="../../index.html">Подписаться на рассылку</a>
+          <nav class="footer__nav footer__wrapper-item_nav-pos">
+            <ul class="footer__nav-items">
+              <li class="footer__nav-item"><a class="footer__nav-link"  href="../catalog/catalog.css">Каталог</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="../sales/sales.html">Акции</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
+            </ul>
+            <ul class="footer__nav-items">
+              <li class="footer__nav-item"><a class="footer__nav-link" href="../../index.html">О нас</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="#">Статьи</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__wrapper-desctop">
+        <div class="footer__logo-social">
+          <a class="footer__logo-item footer__logo-social_logo-desc" href="../../index.html"><img class="footer__logo-item" src="../footer/img/footer-logo.svg" alt="logo"></a>
+          <div class="footer__social-items">
+            <a class="footer__social-item" href="#"><img class="footer__social-item" src="../footer/img/vk-footer.svg" alt="vk-social"></a>
+            <a class="footer__social-item footer__social-item_position" href="#"><img class="footer__social-item" src="../footer/img/fb-footer.svg" alt="fb-social"></a>
+            <a class="footer__social-item" href="#"><img class="footer__social-item" src="../footer/img/inst-footer.svg" alt="vk-social"></a>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-items">
+            <li class="footer__nav-item"><a class="footer__nav-link"  href="../catalog/catalog.css">Каталог</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="../sales/sales.html">Акции</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
+          </ul>
+          <ul class="footer__nav-items">
+            <li class="footer__nav-item"><a class="footer__nav-link" href="../../index.html">О нас</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Статьи</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости</a></li>
+          </ul>
+        </nav>
+        <div class="footer__contacts">
+          <a class="footer__input" href="../../index.html">Подписаться на рассылку</a>
+          <div class = "footer__container">
+            <p class="footer__contacts-item">pirogi.support@gmail.com</p>
+          <h1 class="footer__contacts-item">+7 (456) 234 36 96</h1>
+          <p class="footer__contacts-item">Москва, ул. Мечты, 21</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__policy">
+        <p class="footer__policy-item">Политика конфиденциальности</p>
+        <p class="footer__policy-item">&#169 2021, All rights reserved</p>  
+      </div>
+    </footer>
+  </div>
+  
+</body>
+</html>
