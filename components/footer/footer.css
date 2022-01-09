@@ -67,7 +67,7 @@
   border: 2px solid var(--footer-text);
   border-radius: 50px;
   background: transparent;
-  padding: 0.8125rem 1.875rem;
+  padding: 0.8125rem 1.7rem;
   font-size: 0.75rem;
   cursor: pointer;
   color: var(--footer-text);
@@ -75,6 +75,7 @@
 
 .footer__wrapper-item_input-pos {
   margin: 1.4375rem auto 0.9375rem;
+  max-width: 13rem;
 }
 
 .footer__nav {

@@ -10,7 +10,7 @@
   <script src="../header/js/script.js" defer></script>
   <title>Catalog</title>
 </head>
-<body>
+<body class="modal-open">
   <div class="catalog-page-wrapper">
     <header class="header">
       <a href="#" class="header__burger-menu-link"><img  src="../header/img/burger-menu.svg" alt="burger-menu"></a>
@@ -22,7 +22,7 @@
             <li><a class="nav__item nav__item_type_burger" href="../contacts/contacts.html">Контакты</a></li>
             <li><a class="nav__item nav__item_type_burger" href="#">Каталог</a></li>
             <li><a class="nav__item nav__item_type_burger" href="../sales/sales.html">Акции</a></li>
-            <li><a class="nav__item nav__item_type_burger" href="#">Статьи</a></li>
+            <li><a class="nav__item nav__item_type_burger" href="../articles/articles.html">Статьи</a></li>
           </ul>
           <p class="nav__contacts nav__contacts_type_burger">+7 (456) 234 36 96</p>
           <p class="nav__adress nav__adress_type_burger">Москва, ул. Мечты, 21</p>
@@ -39,7 +39,7 @@
             <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../contacts/contacts.html">Контакты</a></li>
             <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../catalog/catalog.html">Каталог</a></li>
             <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../sales/sales.html">Акции</a></li>
-            <li class="nav__item header__nav-item"><a class="header__nav-link"  href="#">Статьи</a></li>
+            <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../articles/articles.html">Статьи</a></li>
           </ul>
           <p class="phone header__phone"> +7 (456) 234 36 96 </p>
       </nav>  
@@ -171,6 +171,54 @@
       </div>
     </section>
 
+    <div class="modal-overlay modal-open">
+      <section class="modal-dialog">
+        <div class="modal-dialog__container">
+          <img src="../catalog/img/modal-img-strawberry.png" alt="" class="modal-dialog__img">
+          <p class="modal-dialog__text">Это очень вкусный пирог с кисло-сладкой ягодной начинкой, которая просто тает во рту, оставляя приятное послевкусие и навевая воспоминания о солнечном лете</p>
+        </div>
+        <div class="modal-dialog__container">
+          <h1 class="page-header modal-dialog__page-header">Пирог с клубникой, малиной и черникой</h1>
+          <div class="modal-dialog__btn-price">
+            <p class="modal-dialog__price">1260 &#8381;</p>
+            <a href="#" class="button modal-dialog__btn">Подробнее</a>
+          </div>
+          <h5 class="modal-dialog__characteristics">Характеристики</h5>
+          <table class="modal-dialog__table">
+            <tr class="modal-dialog__row">
+              <td class="modal-dialog__item modal-dialog__item_type_descr">Начинка</td>
+              <td class="modal-dialog__item">Клубника, малина, черника</td>
+            </tr>
+            <tr class="modal-dialog__row">
+              <td class="modal-dialog__item modal-dialog__item_type_descr">Вес:</td>
+              <td class="modal-dialog__item">900 г.</td>
+            </tr>
+            <tr class="modal-dialog__row">
+              <td class="modal-dialog__item modal-dialog__item_type_descr">Калорийность:</td>
+              <td class="modal-dialog__item">258,7 ккал</td>
+            </tr>
+            <tr class="modal-dialog__row">
+              <td class="modal-dialog__item modal-dialog__item_type_descr">Белки:</td>
+              <td class="modal-dialog__item">4,5 г</td>
+            </tr>
+            <tr class="modal-dialog__row">
+              <td class="modal-dialog__item modal-dialog__item_type_descr">Жиры:</td>
+              <td class="modal-dialog__item">5,2 г</td>
+            </tr>
+            <tr class="modal-dialog__row">
+              <td class="modal-dialog__item modal-dialog__item_type_descr">Углеводы:</td>
+              <td class="modal-dialog__item">17,1 г</td>
+            </tr>
+            <tr class="modal-dialog__row">
+              <td class="modal-dialog__item modal-dialog__item_type_descr">Состав: </td>
+              <td class="modal-dialog__item">Сахар, яица куриные, мука пшеничная, разрыхлитель</td>
+            </tr>
+          </table>
+        </div>
+        <a class="modal-dialog__close-btn" href="#">Закрыть</a>
+      </section>
+    </div>
+
     <footer class="footer catalog-page-wrapper__footer">
       <div class="footer__wrapper-mobile">
         <div class="footer__wrapper-item">
@@ -198,8 +246,8 @@
             </ul>
             <ul class="footer__nav-items">
               <li class="footer__nav-item"><a class="footer__nav-link" href="../../index.html">О нас</a></li>
-              <li class="footer__nav-item"><a class="footer__nav-link" href="#">Статьи</a></li>
-              <li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="../articles/articles.html">Статьи</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="../articles/articles.html">Новости</a></li>
             </ul>
           </nav>
         </div>
@@ -221,8 +269,8 @@
           </ul>
           <ul class="footer__nav-items">
             <li class="footer__nav-item"><a class="footer__nav-link" href="../../index.html">О нас</a></li>
-            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Статьи</a></li>
-            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="../articles/articles.html">Статьи</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="../articles/articles.html">Новости</a></li>
           </ul>
         </nav>
         <div class="footer__contacts">

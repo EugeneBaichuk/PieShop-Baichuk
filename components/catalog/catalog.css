@@ -205,3 +205,113 @@
 .catalog-page-wrapper__footer {
   margin: 3.125rem 0 0;
 }
+
+.modal-overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: background 400ms ease;
+}
+
+.modal-overlay:target {
+  background: rgba(0, 0, 0, 1);
+}
+
+.modal-dialog {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  position: fixed;
+  width: 80%;
+  max-width: 1216px;
+  background: #FFF;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #B52B65;
+  border-radius: 47px;
+}
+
+.modal-dialog__container {
+  width: 45%;
+  padding: 1.875rem 0 0 1.875rem;
+}
+
+.modal-dialog__img {
+  display: block;
+  width: 100%;
+}
+
+.modal-dialog__page-header {
+  margin: 0 2.875rem 0 0;
+  text-align: left;
+  font-size: 3.125rem;
+}
+
+.modal-dialog__text {
+  margin: 1.25rem 0 0;
+  font-size: 1.25rem;
+  line-height: 120%;
+  color: #31052A;
+}
+
+.modal-dialog__btn-price {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.875rem 2.875rem 0 0;
+  align-items: center;
+}
+
+.modal-dialog__btn {
+  border: 1px solid #621055;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 0.875rem 4.25rem;
+  line-height: 1.4375rem;
+  text-align: center;
+  background: #621055;
+}
+
+.modal-dialog__price {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.125rem;
+  line-height: 3.6875rem;
+  color: #F3B366;
+}
+
+.modal-dialog__characteristics {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #B52B65;
+  margin: 1.25rem 0;
+}
+
+.modal-dialog__item {
+  padding: 0 2.9375rem .375rem 0;
+  font-size: 1.125rem;
+  line-height: 130%;
+  color: #31052A;
+  vertical-align: top;
+}
+
+.modal-dialog__item_type_descr {
+  color: #999;
+}
+
+.modal-dialog__close-btn {
+  margin: 1.875rem;
+  width: 100%;
+  text-align: center;
+}
+
+body.modal-open  {
+  overflow: hidden;
+}
