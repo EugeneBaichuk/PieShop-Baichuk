@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-@media (min-width: 26rem) {
+@media (min-width: 35rem) {
   .page-header {
     font-size: 4.375rem;
   }

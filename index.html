@@ -5,14 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Пироговая №1</title>
+  <title>Pie-Shop №1</title>
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="img/logo.svg" rel="shortcut icon" type="image/x-icon">
   <script src="components/header/js/script.js" defer></script>
+  <script src="components/landing-page/smoothScroll.js" defer></script>
+  <script src="components/landing-page/slider.js" defer></script>
+  <script src="components/landing-page/article-slider.js" defer></script>
 </head>
 
 <body>
+  <a href="#" id="top"></a>
   <header class="header">
     <a href="#" class="header__burger-menu-link"><img  src="components/header/img/burger-menu.svg" alt="burger-menu"></a>
     <p class="phone phone_type_laptop phone_disabled">+7 (456) 234 36 96</p>
@@ -23,7 +27,7 @@
           <li><a class="nav__item nav__item_type_burger" href="components/contacts/contacts.html">Контакты</a></li>
           <li><a class="nav__item nav__item_type_burger" href="components/catalog/catalog.html">Каталог</a></li>
           <li><a class="nav__item nav__item_type_burger" href="components/sales/sales.html">Акции</a></li>
-          <li><a class="nav__item nav__item_type_burger" href="#">Статьи</a></li>
+          <li><a class="nav__item nav__item_type_burger" href="components/articles/articles.html">Статьи</a></li>
         </ul>
         <p class="nav__contacts nav__contacts_type_burger">+7 (456) 234 36 96</p>
         <p class="nav__adress nav__adress_type_burger">Москва, ул. Мечты, 21</p>
@@ -40,14 +44,17 @@
           <li class="nav__item header__nav-item"><a class="header__nav-link"  href="components/contacts/contacts.html">Контакты</a></li>
           <li class="nav__item header__nav-item"><a class="header__nav-link"  href="components/catalog/catalog.html">Каталог</a></li>
           <li class="nav__item header__nav-item"><a class="header__nav-link"  href="components/sales/sales.html">Акции</a></li>
-          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="#">Статьи</a></li>
+          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="components/articles/articles.html">Статьи</a></li>
         </ul>
         <p class="phone header__phone"> +7 (456) 234 36 96 </p>
     </nav>
   </header>  
 
+  <a href="#top" class="scroll-btn">
+    <p class="scroll-btn__arrow">&#8648;</p>
+  </a>
+
   <main>
-  
     <article class="main-screen">
       <section class="pie-shop-adv">
         <h1 class="pie-shop-adv__header main-screen_align_text">Пироговая N1</h1>
@@ -58,16 +65,19 @@
       </section>
       <div class=main-screen__block></div>
       <section class="main-screen__slider">
-          <a href="#" class="slider__link">
-            <p class="slider__content">Скидка 20% при заказе трех и более пирогов</p>
-            <p class="slider__content slider__content_more">подробнее</p>
-          </a>
-          <a href="#" class="slider__link-inner slider__link_disabled">
-            <p class="slider__content">При заказе от 5000 &#8381 доставка бесплатно</p>
-            <p class="slider__content slider__content_more">подробнее</p>
-          </a>
-          <a href="#"><img src="img/main-sale-slider.svg" alt="slider-button" class="slider__button-left"></a>
-          <a href="#"><img src="img/main-sale-slider.svg" alt="slider-button" class="slider__button-right"></a>
+        <a href="#" class="slider__link">
+          <p class="slider__content">Скидка 20% при заказе трех и более пирогов</p>
+          <p class="slider__content slider__content_more">подробнее</p>
+        </a>
+        <a href="#" class="slider__link-inner slider__link_disabled">
+          <p class="slider__content">При заказе от 5000 &#8381 доставка бесплатно</p>
+          <p class="slider__content slider__content_more">подробнее</p>
+        </a>
+        <div class="slider-btns slider__btns-container">
+          <a href="#" class="slider-btns__link "><img src="img/main-sale-slider.svg" alt="slider-button" class="slider__button-left"></a>
+          <a href="#" class="slider-btns__link"><img src="img/main-sale-slider.svg" alt="slider-button" class="slider-btns__btn slider__button-right"></a>
+        </div>
+        
       </section>
 
       <section class="main-screen__slider-desctop">
@@ -127,12 +137,22 @@
         </a>
         <a class ="landing-card landing-card__articles
          landing-card_bg_recipe" href="#">
-        <p class="landing-card__text">Как приготовить пирог «Маргарита» <br>у себя дома</p>
+          <p class="landing-card__text">Как приготовить пирог «Маргарита» <br>у себя дома</p>
+        </a>
+        <a class ="landing-card landing-card__articles landing-card_bg_advantage
+        landing-card__last-article " href="#">
+          <p class="landing-card__text">Почему наши пироги самые лучшие?</p>
         </a>
         <a class ="landing-card landing-card__articles landing-card_bg_advantage
         landing-card__last-article" href="#">
-        <p class="landing-card__text">Почему наши пироги самые лучшие?</p>
+          <p class="landing-card__text">Почему наши пироги самые лучшие?</p>
         </a>
+      </div>
+      <div class="article__slider-container">
+        <div class="article__slider-btns">
+          <a href="#" class="article__btns-link "><img src="img/main-sale-slider.svg" alt="slider-button" class="article__slider-btn"></a>
+          <a href="#" class="slider-btns__link"><img src="img/main-sale-slider.svg" alt="slider-button" class="article__slider-btn slider__button-right article__button-right"></a>
+        </div>
       </div>
     </section>
 
@@ -140,7 +160,7 @@
       <form action="submit" class="form">
           <h2 class="form__header form__header_font_basic">Подпишитесь на нашу рассылку</h2>
           <p class="form__header form__header_font_regular">и первым узнавайте об акциях и скидках!</p>
-          <input class="form__input-text" type="text" name="e-mail" value="Введите ваш e-mail"> 
+          <input class="form__input-text" type="text" name="e-mail" placeholder="Введите ваш e-mail"> 
           <input class="form__input-button" type="submit">
       </form>
     </div>
@@ -173,8 +193,8 @@
             </ul>
             <ul class="footer__nav-items">
               <li class="footer__nav-item"><a class="footer__nav-link" href="#">О нас</a></li>
-              <li class="footer__nav-item"><a class="footer__nav-link" href="#">Статьи</a></li>
-              <li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="components/articles/articles.html">Статьи</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="components/articles/articles.html">Новости</a></li>
             </ul>
           </nav>
         </div>
@@ -196,8 +216,8 @@
           </ul>
           <ul class="footer__nav-items">
             <li class="footer__nav-item"><a class="footer__nav-link" href="#">О нас</a></li>
-            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Статьи</a></li>
-            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="components/articles/articles.html">Статьи</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="components/articles/articles.html">Новости</a></li>
           </ul>
         </nav>
         <div class="footer__contacts">

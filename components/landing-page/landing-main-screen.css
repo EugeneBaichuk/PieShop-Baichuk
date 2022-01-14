@@ -69,6 +69,10 @@
   letter-spacing: 0.01em;
 }
 
+.scroll-btn {
+  display: none;
+}
+
 .main-screen {
   background: url(img/pie-background-mobile.png) center;
   background-size: cover;
@@ -116,6 +120,7 @@ background: var(--landing-button-color);
 .pie-shop-adv__small-paragraph_disp_none {
   opacity: 0;
 }
+
 
 .main-screen__button:hover {
   animation: main-screen__button 2s infinite ease;
@@ -178,23 +183,55 @@ background: var(--landing-button-color);
   display: none;
 }
 
+.slider-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__btns-container {
+  position: absolute;
+  width: 110%;
+  left: -.875rem;
+  bottom: 1.475rem;
+}
+
+
 .slider__button-left,
 .slider__button-right {
-  bottom: 1.85rem;
-  position: absolute;
   cursor: pointer;
 }
 
-.slider__button-left {
-  left: -12px;
-}
-
-.slider__button-right {
-  right: -12px;
+.slider__button-right { 
   transform: rotate(180deg);
 }
 
 @media screen and (min-width: 35rem) {
+  .scroll-btn {
+    display: block;
+    position: fixed;
+    width: 5rem;
+    height: 5rem;
+    background: #F3B366;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 200;
+    border-radius: 50px;
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+  }
+
+  .scroll-btn_show {
+    transform: translateX(0);
+  }
+
+  .scroll-btn__arrow {
+    font-size: 70px;
+    line-height: 5rem;
+    color: #B52B65;
+    text-align: center;
+    vertical-align: middle;
+  }
+
   .main-screen {
     background: url(img/pie-background-desc.png) center;
     background-size: cover;
@@ -461,7 +498,7 @@ background: var(--landing-button-color);
 
 @media (min-width: 46rem) {
   .landing-cards {
-    justify-content: center;
+    justify-content: space-between;
     max-width: 76rem;
     margin: 1.5625rem auto 0;
   }
@@ -510,6 +547,10 @@ background: var(--landing-button-color);
   margin: 1.875rem 0 0;
 }
 
+.article__slider-btns {
+  display: none;
+}
+
 .landing-card_bg_health {
   background: url(img/helth-card-mobile.png) no-repeat,
   var(--landing-card-bg);
@@ -531,15 +572,25 @@ background: var(--landing-button-color);
 }
 
 @media (min-width: 46rem) {
+  .articles {
+    position: relative;
+  }
+
   .landing-cards__articles {
     flex-flow: nowrap;
+    max-width: 50rem;
   }
 
   .landing-card__articles {
     flex-flow: nowrap;
     max-width: 24.5rem;
+    width: 70%;
     height: 27rem;
     margin: 0;
+  }
+
+  .landing-card__articles_disabled {
+    display: none;
   }
 
   .landing-card__first-article {
@@ -571,11 +622,53 @@ background: var(--landing-button-color);
     line-height: 28px;
     text-align: center;
   }
+
+  .article__slider-container {
+    position: absolute;
+    bottom: 11.5rem;
+    width: 100%;
+  }
+
+  .article__slider-btns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 56rem;
+    margin: auto;
+  }
+
+  .article__slider-btn {
+    cursor: pointer;
+    transform: scale(2);
+  }
+
+  .slider__button-right {
+    transform:scale(2) rotate(180deg);
+  }
 }
 
 @media (min-width: 63rem) {
   .landing-card__articles {
     height: 24.5rem;
+  }
+}
+
+@media (min-width: 78rem) {
+  .landing-cards__articles {
+    max-width: 76rem;
+  }
+
+  .landing-card__articles {
+    margin:0 auto;
+    position: relative;
+    transition: left 0.4s ease;
+  }
+
+  .landing-card__articles_action_slider {
+    left: 25.332rem;
+  }
+
+  .article__slider-btns {
+    max-width: 82rem;
   }
 }
 

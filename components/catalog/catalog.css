@@ -48,6 +48,7 @@
   width: 18rem;
   max-width: 18rem;
   margin: 0 auto;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 .button__triangle {
@@ -55,15 +56,24 @@
   width: 12.4px;
   height: 6.2px;
   position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
+  top: 45%;
   right: 25%;
+  transition: transform 0.2s ease;
+}
+
+.button__triangle_dir_up {
+  transform: scale(1, -1);
+}
+
+.catalog-nav__button_type_burger {
+  margin: 0.5rem auto;
+  background: transparent;
+  color: #621055;
+
 }
 
 .catalog-nav__button_disabled {
   display: none;
-  background: transparent;
-  color: #621055;
 }
 
 @media (min-width: 37.5rem) {
@@ -73,6 +83,11 @@
     background: transparent;
     color: #621055;
     margin: 0 0 1rem;
+  }
+
+  .catalog-nav__button_active {
+    background: #621055;
+    color: white;
   }
 
   .catalog-nav {
@@ -141,6 +156,10 @@
   margin: 31px 0 0;
 }
 
+.card-wrapper__fat-card {
+  display: block;
+}
+
 .card__btn-price-wrapper {
   display: flex;
   justify-content: space-between;
@@ -205,3 +224,193 @@
 .catalog-page-wrapper__footer {
   margin: 3.125rem 0 0;
 }
+
+.modal-dialog {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 200;
+  background: #FFF;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+}
+
+.modal-dialog::-webkit-scrollbar {
+  width: 0;
+}
+
+.modal-overlay_closed {
+  display: none;
+  opacity: 0;
+}
+
+.modal-dialog__container {
+  width: 100%;
+  min-width: 20rem;
+  padding: 1.25rem 1.25rem 0 1.25rem;
+}
+
+.modal-dialog__img {
+  display: block;
+  width: 100%;
+  max-width: 530px;
+  margin: auto;
+}
+
+.modal-dialog__page-header {
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.modal-dialog__text {
+  display: none;
+}
+
+.modal-dialog__btn-price {
+  margin: 1rem auto 0;
+  max-width: 530px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  align-items: center;
+}
+
+.modal-dialog__btn {
+  margin: 0.9375rem 0 0;
+  padding: 0.875rem 4.25rem;
+  background: #621055;
+  border: 1px solid #621055;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
+  text-align: center;
+}
+
+.modal-dialog__price {
+  margin: 0.625rem 0 0;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #F3B366;
+}
+
+.modal-dialog__characteristics {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #B52B65;
+  margin: 1.25rem 0;
+  text-align: center;
+}
+
+.modal-dialog__table {
+  margin: 0 auto;
+  max-width: 530px;
+}
+
+.modal-dialog__item {
+  padding: 0 1rem .375rem 0;
+  font-size: 1rem;
+  line-height: 120%;
+  color: #31052A;
+  vertical-align: top;
+}
+
+.modal-dialog__item_type_descr {
+  color: #999;
+}
+
+.modal-dialog__close-btn {
+  margin: 1.875rem;
+  text-align: center;
+}
+
+@media (min-width:50.5rem) {
+  .modal-overlay {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .modal-dialog {
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1216px;
+    background: #FFF;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #B52B65;
+    border-radius: 47px;
+    max-height: 95vh;
+  }
+
+  .modal-dialog__container {
+    max-width: 50%;
+    padding: 1.875rem 1rem 0 1.875rem;
+  }
+
+  .modal-dialog__page-header {
+    margin: 0 2.875rem 0 0;
+    text-align: left;
+    font-size: 3.125rem;
+  }
+
+  .modal-dialog__text {
+    display: block;
+    margin: 1.25rem 0 0;
+    font-size: 1.125rem;
+    line-height: 120%;
+  }
+
+  .modal-dialog__btn-price {
+    justify-content: space-between;
+    margin: 1rem 2.875rem 0 0;
+    align-items: center;
+  }
+
+  .modal-dialog__btn {
+    margin: 0;
+  }
+
+  .modal-dialog__price {
+    font-weight: bold;
+    font-size: 3.125rem;
+    line-height: 6rem;
+    margin: 0;
+  }
+
+  .modal-dialog__characteristics {
+    text-align: left;
+  }
+
+  .modal-dialog__table {
+    width:100%;
+  }
+
+  .modal-dialog__item {
+    padding: 0 2.9375rem .375rem 0;
+    font-size: 1.125rem;
+    line-height: 130%;
+  }
+
+  .modal-dialog__item_type_descr {
+    color: #999;
+  }
+
+  .modal-dialog__close-btn {
+    margin: 1.875rem auto; 
+  }
+
+}
+

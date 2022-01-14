@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../landing-page/landing-main-screen.css">
   <link href="../header/img/logo.svg" rel="shortcut icon" type="image/x-icon">
-  <script src="components/header/js/script.js" defer></script>
-  <script src="../landing-page/smoothScroll.js" defer></script>
-  <title>Pie-Shop №1</title>
+  <link rel="stylesheet" href="../articles/articles.css">
+  <script src="../header/js/script.js" defer></script>
+  <title>Articles</title>
 </head>
 <body>
-  <a href="#" id="top"></a>
-  <header class="header">
+  <div class="articles-page-wrapper">
+    <header class="header">
     <a href="#" class="header__burger-menu-link"><img  src="../header/img/burger-menu.svg" alt="burger-menu"></a>
     <p class="phone phone_type_laptop phone_disabled">+7 (456) 234 36 96</p>
     <a href="../../index.html" class="logo"><img src="../header/img/logo.svg" alt="logo" class="logo"></a>
@@ -22,7 +21,7 @@
           <li><a class="nav__item nav__item_type_burger" href="../contacts/contacts.html">Контакты</a></li>
           <li><a class="nav__item nav__item_type_burger" href="../catalog/catalog.html">Каталог</a></li>
           <li><a class="nav__item nav__item_type_burger" href="../sales/sales.html">Акции</a></li>
-          <li><a class="nav__item nav__item_type_burger" href="../articles/articles.html">Статьи</a></li>
+          <li><a class="nav__item nav__item_type_burger" href="#">Статьи</a></li>
         </ul>
         <p class="nav__contacts nav__contacts_type_burger">+7 (456) 234 36 96</p>
         <p class="nav__adress nav__adress_type_burger">Москва, ул. Мечты, 21</p>
@@ -39,116 +38,104 @@
           <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../contacts/contacts.html">Контакты</a></li>
           <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../catalog/catalog.html">Каталог</a></li>
           <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../sales/sales.html">Акции</a></li>
-          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../articles/articles.html">Статьи</a></li>
+          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="#">Статьи</a></li>
         </ul>
         <p class="phone header__phone"> +7 (456) 234 36 96 </p>
-    </nav>  
-  </header>
-
-  <a href="#top" class="scroll-btn">
-    <span>&#10595;</span>
-  </a>
-
-  <article class="main-screen">
-      <section class="pie-shop-adv">
-        <h1 class="pie-shop-adv__header main-screen_align_text">Пироговая N1</h1>
-        <h2 class="pie-shop-adv__paragraph main-screen_align_text">Домашние пироги для всей семьи<br> со скидкой 20%<br></h2>
-        <h3 class="pie-shop-adv__small-paragraph main-screen_align_text">Проводите время с семьей, а не с духовкой</h3>
-        <input class="button main-screen__button" type="button" value="Подробнее">
-        <p class="pie-shop-adv__small-paragraph main-screen_align_text pie-shop-adv__small-paragraph_disp_none">... ммм, скоро будет вкусно</p>
-      </section>
-      <div class=main-screen__block></div>
-      
-      <section class="main-screen__slider">
-          <a href="#" class="slider__link">
-            <p class="slider__content">Скидка 20% при заказе трех и более пирогов</p>
-            <p class="slider__content slider__content_more">подробнее</p>
-          </a>
-          <a href="#" class="slider__link-inner slider__link_disabled">
-            <p class="slider__content">При заказе от 5000 &#8381 доставка бесплатно</p>
-            <p class="slider__content slider__content_more">подробнее</p>
-          </a>
-          <a href="#" class="slider__button-link"><img src="img/main-sale-slider.svg" alt="slider-button" class="slider__button-left"></a>
-          <a href="#" class="slider__button-link"><img src="img/main-sale-slider.svg" alt="slider-button" class="slider__button-right"></a>
-      </section>
-
-      <section class="main-screen__slider-desctop">
-          <a href="#" class="slider__link">
-            <p class="slider__content slider__link_type_animated">Скидка 20% при заказе трех и более пирогов</p>
-            <p class="slider__content slider__content_more slider__content_type_animated-1">подробнее</p>
-          </a>
-          <a href="#" class="slider__link slider__link_type_bg-changed">
-            <p class="slider__content slider__link_type_animated">При заказе от 5000 &#8381 доставка бесплатно</p>
-            <p class="slider__content slider__content_more slider__content_type_animated-2">подробнее</p>
-          </a>
-      </section>
-    </article>
-
-    <section class="advantages">
-      <div class="advantages__container">
-        <div class="advantages__bg advantages__bg_donuts"></div>
-        <p class="advantages__name">Любой объем</p>
-      </div>
-      <div class="advantages__container">
-        <div class="advantages__bg advantages__bg_oven"></div>
-        <p class="advantages__name">Доставим горячими</p>
-      </div>
-      <div class="advantages__container">
-        <div class="advantages__bg advantages__bg_cake"></div>
-        <p class="advantages__name">Вкусные начинки</p>
-      </div>
-      <div class="advantages__container">
-        <div class="advantages__bg advantages__bg_bread"></div>
-        <p class="advantages__name">Сочные и свежие</p>
+    </nav>
+    </header>  
+    <section class="article-container">
+      <h1 class="page-header article-container__page-header">Как приготовить пирог "Клубничный" у себя дома</h1>
+      <article class="article-container__ingredients  ">
+        <img class="article-container__pie-img" src="img/article-strawberry-pie.png" alt="strawberry-pie">
+        <section class="article-container__ingr-container">
+          <h5 class="article-container__ingr-header">Ингредиенты:</h5>
+          <ul class="article-container__ingr-list">
+            <li class="article-container__ingr-list-item">мука пшеничная - 240 г;</li>
+            <li class="article-container__ingr-list-item">разрыхлитель - 1,5 ч. л.;</li>
+            <li class="article-container__ingr-list-item">клубника свежая - 200 г;</li>
+            <li class="article-container__ingr-list-item">масло сливочное - 100 г;</li>
+            <li class="article-container__ingr-list-item">сахар - 210 г;</li>
+            <li class="article-container__ingr-list-item">молоко - 125 мл;</li>
+            <li class="article-container__ingr-list-item">яйцо - 1 шт.;</li>
+            <li class="article-container__ingr-list-item">соль - 0,5 ч. л.;</li>
+            <li class="article-container__ingr-list-item">сахарная пудра</li>
+          </ul>
+        </section>
+      </article>
+    </section>
+    <section class="stages">
+      <h1 class="stages__header">этапы приготовления:</h1>
+      <div class="stages__content">
+        
+        <div class="stages__img stages__img_no_1"></div>
+        <div class="stages__ol stages__ol_no_1">
+          <div class="stages__border"></div>
+        </div>
+        <p class="stages__item stages__item__no_1">
+          Поместить в миску мягкое сливочное масло. Отложить для посыпки 2 столовые ложки сахара, оставшийся сахар добавить к маслу и хорошо взбить венчиком
+        </p>
+        <div class="stages__img stages__img_no_2"></div>
+        <div class="stages__ol stages__ol_no_2">
+          <div class="stages__border"></div>
+        </div>
+        <p class="stages__item stages__item__no_2">
+          В получившуюся смесь масла и сахара добавить яйцо и снова перемешать.
+        </p>
+        <div class="stages__img stages__img_no_3"></div>
+        <div class="stages__ol stages__ol_no_3">
+          <div class="stages__border"></div>
+        </div>
+        <p class="stages__item stages__item__no_3">
+          Затем влить молоко комнатной температуры, добавить соль и просеянную с разрыхлителем муку, тщательно перемешать.
+        </p>
+        <div class="stages__img stages__img_no_4">
+        </div>
+        <div class="stages__ol stages__ol_no_4">
+          <div class="stages__border"></div>
+        </div>
+        <p class="stages__item stages__item__no_4">
+          Тесто для пирога со свежей клубникой получится густым, кремообразным.
+        </p>
+        <div class="stages__img stages__img_no_5"></div>
+        <div class="stages__ol stages__ol_no_5">
+          <div class="stages__border"></div>
+        </div>
+        <p class="stages__item stages__item__no_5">
+          Взять плотную клубнику, промыть и обсушить. Форму диаметром 22 см застелить пергаментом, переложить туда тесто. Клубнику разрезать пополам и выложить на тесто срезом вниз. Посыпать тем сахаром, который откладывали.
+        </p>
+        <div class="stages__img stages__img_no_6"></div>
+        <div class="stages__ol stages__ol_no_6">
+          <div class="stages__border"></div>
+        </div>
+        <p class="stages__item stages__item__no_6">
+          Нагреть духовку до 180 градусов и выпекать пирог со свежей клубникой 50 минут, затем остудить на решётке. Пирог можно посыпать сахарной пудрой, но и без неё выпечка получается вкусной.
+        </p>
+        <div class="stages__img stages__img_no_7"></div>
+        <div class="stages__ol stages__ol_no_7"></div>
+        <p class="stages__item stages__item__no_7">
+          Когда пирог с клубникой остынет, разрезать его на кусочки и подать к чаю. Обязательно приготовьте наивкуснейшую выпечку по этому простому рецепту.
+        </p>
       </div>
     </section>
 
-    <section class="landing-catalog">
-      <h1 class="block-header landing-catalog__block-header">в нашем каталоге</h1>
-      <div class="landing-cards" >
-        <a class ="landing-card landing-card_bg_sweet" href="#">
-        <p class="landing-card__label">Сладкие пироги</p>
-        </a>
-        <a class ="landing-card landing-card_bg_fat" href="#">
-        <p class="landing-card__label">Сытные пироги</p>
-        </a>
-        <a class ="landing-card landing-card_bg_morse" href="#">
-        <p class="landing-card__label">Морсы</p>
-        </a>
-        <a class ="landing-card landing-card_bg_pie" href="#">
-        <p class="landing-card__label">Пирожки</p>
-        </a>
-      </div>
-    </section>
-
-    <section class="articles">
-      <h1 class="block-header articles__block-header">Статьи</h1>
+    <section class="articles articles-page-wrapper__articles">
+      <h1 class="block-header articles__block-header">Читайте также:</h1>
       <div class="landing-cards landing-cards__articles">
         <a class ="landing-card landing-card__articles landing-card__first-article landing-card_bg_health" href="#">
           <p class="landing-card__text">5 полезных для здоровья веществ, которые есть в морсах</p>
         </a>
         <a class ="landing-card landing-card__articles
          landing-card_bg_recipe" href="#">
-          <p class="landing-card__text">Как приготовить пирог «Маргарита» <br>у себя дома</p>
+        <p class="landing-card__text">Как приготовить пирог «Маргарита» <br>у себя дома</p>
         </a>
         <a class ="landing-card landing-card__articles landing-card_bg_advantage
         landing-card__last-article" href="#">
-          <p class="landing-card__text">Почему наши пироги самые лучшие?</p>
+        <p class="landing-card__text">Почему наши пироги самые лучшие?</p>
         </a>
-
-        
       </div>
     </section>
 
-    <div class="email-bg">
-      <form action="submit" class="form">
-          <h2 class="form__header form__header_font_basic">Подпишитесь на нашу рассылку</h2>
-          <p class="form__header form__header_font_regular">и первым узнавайте об акциях и скидках!</p>
-          <input class="form__input-text" type="text" name="e-mail" placeholder="Введите ваш e-mail"> 
-          <input class="form__input-button" type="submit">
-      </form>
-    </div>
-    <footer class="footer catalog-page-wrapper__footer">
+    <footer class="footer articles-page-wrapper__footer">
       <div class="footer__wrapper-mobile">
         <div class="footer__wrapper-item">
           <div class="footer__contacts">
@@ -160,7 +147,7 @@
             <a class="footer__logo-item footer__logo-social_logo-mob" href="../../index.html"><img src="../footer/img/footer-logo.svg" alt="logo"></a>
             <div class="footer__social-items footer__logo-social_social-mob">
               <a class="footer__social-item" href="#"><img class="footer__social-item" src="../footer/img/vk-footer.svg" alt="vk-social"></a>
-              <a class="footer__social-item footer__social-item_position" href="#"><img class="footer__social-item" src="../footer/img/fb-footer.svg" alt="fb-social"></a>
+              <a class="footer__social-item footer__social-item_position" href="#"><img class="../footer/footer__social-item" src="../footer/img/fb-footer.svg" alt="fb-social"></a>
               <a class="footer__social-item" href="#"><img class="footer__social-item" src="../footer/img/inst-footer.svg" alt="vk-social"></a>
             </div>
           </div>
@@ -175,8 +162,8 @@
             </ul>
             <ul class="footer__nav-items">
               <li class="footer__nav-item"><a class="footer__nav-link" href="../../index.html">О нас</a></li>
-              <li class="footer__nav-item"><a class="footer__nav-link" href="../articles/articles.html">Статьи</a></li>
-              <li class="footer__nav-item"><a class="footer__nav-link" href="../articles/articles.html">Новости</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="#">Статьи</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости</a></li>
             </ul>
           </nav>
         </div>
@@ -193,13 +180,13 @@
         <nav class="footer__nav">
           <ul class="footer__nav-items">
             <li class="footer__nav-item"><a class="footer__nav-link"  href="../catalog/catalog.html">Каталог</a></li>
-            <li class="footer__nav-item"><a class="footer__nav-link" href="../sales/sales.html">Акции</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Акции</a></li>
             <li class="footer__nav-item"><a class="footer__nav-link" href="../contacts/contacts.html">Контакты</a></li>
           </ul>
           <ul class="footer__nav-items">
             <li class="footer__nav-item"><a class="footer__nav-link" href="../../index.html">О нас</a></li>
-            <li class="footer__nav-item"><a class="footer__nav-link" href="../articles/articles.html">Статьи</a></li>
-            <li class="footer__nav-item"><a class="footer__nav-link" href="../articles/articles.html">Новости</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Статьи</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости</a></li>
           </ul>
         </nav>
         <div class="footer__contacts">
@@ -216,5 +203,7 @@
         <p class="footer__policy-item">&#169 2021, All rights reserved</p>  
       </div>
     </footer>
+  </div>
+  
 </body>
 </html>
