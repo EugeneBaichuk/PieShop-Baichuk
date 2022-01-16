@@ -1,10 +1,9 @@
-
 :root {
   --header-background-color: var(--grey);
   --burger-background-color: var(--white);
   --header-item-color: var(--purple);
   --header-text-color: var(--pink);
-}
+} 
 
 .header {
   position: fixed;

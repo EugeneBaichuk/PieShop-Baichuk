@@ -1,0 +1,26 @@
+{
+    "lang": "ru",
+    "dir": "ltr",
+    "name": "Pie-Shop №1",
+    "description": "It's high time to taste adelicious pie",
+    "short_name": "Pie-Shop",
+    "icons": [{
+        "src": "../favicon/logo.svg",
+        "sizes": "64x64",
+        "type": "image/svg+hml"
+    },{
+        "src": "../components/landing-page/img/pie-background-mobile.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }],
+    "start_url": "../index.html",
+    "display": "fullscreen",
+    "orientation": "landscape",
+    "theme_color": "purple",
+    "background_color": "white",
+    "screenshots": [{
+        "src": "../components/landing-page/img/pie-background-mobile.png",
+        "sizes": "640x480",
+        "type": "image/png"
+    }]
+}

@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../normalize.css">
   <link href="../header/img/logo.svg" rel="shortcut icon" type="image/x-icon">
   <link rel="stylesheet" href="../articles/articles.css">
   <script src="../header/js/script.js" defer></script>
+  <script src="article-slider.js" defer></script>
+  <script src="slideBoxes.js" defer></script>
   <title>Articles</title>
 </head>
+
 <body>
   <div class="articles-page-wrapper">
     <header class="header">
-    <a href="#" class="header__burger-menu-link"><img  src="../header/img/burger-menu.svg" alt="burger-menu"></a>
-    <p class="phone phone_type_laptop phone_disabled">+7 (456) 234 36 96</p>
-    <a href="../../index.html" class="logo"><img src="../header/img/logo.svg" alt="logo" class="logo"></a>
-    <div class="header__burger-menu-background nav_disabled"></div>
-    <nav class="nav nav_type_burger nav_disabled">           
+      <a href="#" class="header__burger-menu-link"><img  src="../header/img/burger-menu.svg" alt="burger-menu"></a>
+      <p class="phone phone_type_laptop phone_disabled">+7 (456) 234 36 96</p>
+      <a href="../../index.html" class="logo"><img src="../header/img/logo.svg" alt="logo" class="logo"></a>
+      <div class="header__burger-menu-background nav_disabled"></div>
+      <nav class="nav nav_type_burger nav_disabled">           
         <ul>
           <li><a class="nav__item nav__item_type_burger" href="../contacts/contacts.html">Контакты</a></li>
           <li><a class="nav__item nav__item_type_burger" href="../catalog/catalog.html">Каталог</a></li>
@@ -31,8 +36,8 @@
           <img class="nav__burger-social-img" src="../header/img/inst.svg" alt="instagram-social">
         </div>
         <a href="#"><img class="nav__burger-close-button" src="../header/img/close-button.svg" alt="close-button"></a>
-    </nav>
-    <nav class="nav header__nav"> 
+      </nav>
+      <nav class="nav header__nav"> 
         <p class="header__adress">Москва, ул. Мечты, 21</p>          
         <ul class="header__menu">
           <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../contacts/contacts.html">Контакты</a></li>
@@ -41,8 +46,9 @@
           <li class="nav__item header__nav-item"><a class="header__nav-link"  href="#">Статьи</a></li>
         </ul>
         <p class="phone header__phone"> +7 (456) 234 36 96 </p>
-    </nav>
+      </nav>
     </header>  
+
     <section class="article-container">
       <h1 class="page-header article-container__page-header">Как приготовить пирог "Клубничный" у себя дома</h1>
       <article class="article-container__ingredients  ">
@@ -63,10 +69,10 @@
         </section>
       </article>
     </section>
+
     <section class="stages">
       <h1 class="stages__header">этапы приготовления:</h1>
       <div class="stages__content">
-        
         <div class="stages__img stages__img_no_1"></div>
         <div class="stages__ol stages__ol_no_1">
           <div class="stages__border"></div>
@@ -119,19 +125,33 @@
     </section>
 
     <section class="articles articles-page-wrapper__articles">
-      <h1 class="block-header articles__block-header">Читайте также:</h1>
-      <div class="landing-cards landing-cards__articles">
-        <a class ="landing-card landing-card__articles landing-card__first-article landing-card_bg_health" href="#">
-          <p class="landing-card__text">5 полезных для здоровья веществ, которые есть в морсах</p>
-        </a>
-        <a class ="landing-card landing-card__articles
-         landing-card_bg_recipe" href="#">
-        <p class="landing-card__text">Как приготовить пирог «Маргарита» <br>у себя дома</p>
-        </a>
-        <a class ="landing-card landing-card__articles landing-card_bg_advantage
-        landing-card__last-article" href="#">
-        <p class="landing-card__text">Почему наши пироги самые лучшие?</p>
-        </a>
+      <h1 class="block-header articles__block-header">Статьи</h1>
+      <div class="articles__wrapper">
+        <div class="articles__carousel">
+          <div id="imgs" class="landing-cards landing-cards__articles">
+            <a class ="landing-card landing-card__articles
+            landing-card_bg_strawberry" href="#">
+              <p class="landing-card__text">Как приготовить пирог «Клубничный» <br>у себя дома</p>
+            </a>
+            <a class ="landing-card landing-card__articles landing-card__first-article landing-card_bg_health" href="#">
+              <p class="landing-card__text">5 полезных для здоровья веществ, которые есть в морсах</p>
+            </a>
+            <a class ="landing-card landing-card__articles landing-card_bg_advantage
+            landing-card__last-article " href="#">
+              <p class="landing-card__text">Почему наши пироги самые лучшие?</p>
+            </a>
+            <a class ="landing-card landing-card__articles landing-card_bg_recipe
+            landing-card__last-article" href="#">
+              <p class="landing-card__text">Как приготовить пирог «Маргарита» <br>у себя дома</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="article__slider-container">
+        <div class="article__slider-btns">
+          <img id = "left" src="img/main-sale-slider.svg" alt="slider-button"  class="article__slider-btn">
+          <img id = "right" src="img/main-sale-slider.svg" alt="slider-button"  class="article__slider-btn slider__button-right article__button-right">
+        </div>
       </div>
     </section>
 
@@ -146,9 +166,12 @@
           <div class="footer__logo-social footer__wrapper-item_mob">
             <a class="footer__logo-item footer__logo-social_logo-mob" href="../../index.html"><img src="../footer/img/footer-logo.svg" alt="logo"></a>
             <div class="footer__social-items footer__logo-social_social-mob">
-              <a class="footer__social-item" href="#"><img class="footer__social-item" src="../footer/img/vk-footer.svg" alt="vk-social"></a>
-              <a class="footer__social-item footer__social-item_position" href="#"><img class="../footer/footer__social-item" src="../footer/img/fb-footer.svg" alt="fb-social"></a>
-              <a class="footer__social-item" href="#"><img class="footer__social-item" src="../footer/img/inst-footer.svg" alt="vk-social"></a>
+              <a class="footer__social-item" href="#">
+                <img class="footer__social-item" src="../footer/img/vk-footer.svg" alt="vk-social"></a>
+              <a class="footer__social-item footer__social-item_position" href="#">
+                <img class="../footer/footer__social-item" src="../footer/img/fb-footer.svg" alt="fb-social"></a>
+              <a class="footer__social-item" href="#">
+                <img class="footer__social-item" src="../footer/img/inst-footer.svg" alt="vk-social"></a>
             </div>
           </div>
         </div>
@@ -172,9 +195,15 @@
         <div class="footer__logo-social">
           <a class="footer__logo-item footer__logo-social_logo-desc" href="../../index.html"><img class="footer__logo-item" src="../footer/img/footer-logo.svg" alt="logo"></a>
           <div class="footer__social-items">
-            <a class="footer__social-item" href="#"><img class="footer__social-item" src="../footer/img/vk-footer.svg" alt="vk-social"></a>
-            <a class="footer__social-item footer__social-item_position" href="#"><img class="footer__social-item" src="../footer/img/fb-footer.svg" alt="fb-social"></a>
-            <a class="footer__social-item" href="#"><img class="footer__social-item" src="../footer/img/inst-footer.svg" alt="vk-social"></a>
+            <a class="footer__social-item" href="#">
+              <img class="footer__social-item" src="../footer/img/vk-footer.svg" alt="vk-social">
+            </a>
+            <a class="footer__social-item footer__social-item_position" href="#">
+              <img class="footer__social-item" src="../footer/img/fb-footer.svg" alt="fb-social">
+            </a>
+            <a class="footer__social-item" href="#">
+              <img class="footer__social-item" src="../footer/img/inst-footer.svg" alt="vk-social">
+            </a>
           </div>
         </div>
         <nav class="footer__nav">
@@ -204,6 +233,6 @@
       </div>
     </footer>
   </div>
-  
 </body>
+
 </html>

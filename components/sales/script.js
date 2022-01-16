@@ -2,7 +2,7 @@
 
 // Timer
 const now = new Date();
-const deadline = (`${now.getFullYear()}-${now.getMonth()+1}-${now.getDate()+5}`); // текущая дата + 5 дн
+const deadline = (`${now.getFullYear()}-${now.getMonth()+1}-${now.getDate()+2}`); // текущая дата + 2 дн
 
 function getTimeRemaining(endtime) { // ф-ция получающая оставшееся время в таймере
   const t = Date.parse(endtime) - Date.parse(new Date()), // .parce - получить количество милисек от 1970 года

@@ -1,41 +1,47 @@
-@import url(../../css/style.css);
+@import url(../../style.css);
 @import url(../page-header/page-header.css);
 @import url(../header/header.css);
 @import url(../footer/footer.css);
 @import url(../card/card.css);
 
-:root {
-  --landing-header-color: var(--purple);
-  
-  --landing-slider-link-color: var(--pink);
-  --landing-advantages-name-color: var(--pink);
-  --landing-news-name-color: var(--pink);
-  --landing-card-bg: var(--light-grey);
-  --main-screen-small-text-color: var(--purple);
-  --main-screen-text-color: var(--pink);
-  --main-screen-header-color: var(--orange);
-  --email-header-color: var(--pink);
-  --email-form-bg: var(--light-grey);
-  --hover-shadow-color: var(--purple);
-  --border-color: var(--purple);
-  --email-form-input-text-color: var(--brown-grey);
-  --landing-button-text-color: var(--light-grey);
-
-  --catalog-nav-color: var(--purple);
+/* :root {
   --catalog-card-bg-color: var(--light-grey);
+  --free-card-bg-color: var(--purple);
+  --sale-card-bg-color: var(--pink);
+  --free-sale-card-text-color: var(--grey);
+  --catalog-card-text-color: var(--purple);
+  --catalog-card-border-color: var(--purple);
+  --catalog-card-price-color: var(--orange);
   --catalog-button-color: var(--purple);
   --catalog-button-mobile-text-color: var(--grey);
-}
+  --catalog-button-text-color: var(--white);
+  --modal-dialog-bg-color: var(--white);
+  --modal-dialog-price-color: var(--orange);
+  --modal-dialog-btn-bg-color: var(--purple);
+  --modal-dialog-border-color: var(--pink);
+  --modal-dialog-btn-text-color: var(--grey);
+  --modal-dialog-characteristics-text-color: var(--pink);
+  --modal-dialog-char-table-text-color: var(--purple-black);
+  --modal-dialog-table-text-color: var(--dark-grey);
+} */
 
 .catalog {
   margin: 4.375rem auto 0;
 }
 
+.catalog__page-header {
+  margin: 0 0 2rem;
+}
+
 .catalog-nav__button {
-  display: block;
   position: relative;
+  display: block;
+  width: 18rem;
+  max-width: 18rem;
   padding: 0.125rem 0;
-  background: #621055;
+  margin: 0 auto;
+  background: var(--catalog-button-color);
+  color: var(--catalog-button-mobile-text-color);
   box-shadow: inset 0 0 0 2px var(--catalog-button-color);
   border-radius: 15px;
   font-family: "Lifehack Sans", sans-serif;
@@ -44,20 +50,16 @@
   font-size: 25px;
   line-height: 30px;
   text-align: center;
-  color: var(--catalog-button-mobile-text-color);
-  width: 18rem;
-  max-width: 18rem;
-  margin: 0 auto;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
 .button__triangle {
-  background: url(../img/accordion-rect.svg) center center no-repeat;
-  width: 12.4px;
-  height: 6.2px;
   position: absolute;
   top: 45%;
   right: 25%;
+  width: 12.4px;
+  height: 6.2px;
+  background: url(img/accordion-rect.svg) center center no-repeat;
   transition: transform 0.2s ease;
 }
 
@@ -68,8 +70,7 @@
 .catalog-nav__button_type_burger {
   margin: 0.5rem auto;
   background: transparent;
-  color: #621055;
-
+  color: var(--catalog-button-color);
 }
 
 .catalog-nav__button_disabled {
@@ -78,16 +79,16 @@
 
 @media (min-width: 37.5rem) {
   .catalog-nav__button {
+    margin: 0 0 1rem;
+    background: transparent;
+    color: var(--catalog-button-color);
     font-size: 40px;
     line-height: 48px;
-    background: transparent;
-    color: #621055;
-    margin: 0 0 1rem;
   }
 
   .catalog-nav__button_active {
-    background: #621055;
-    color: white;
+    background: var(--catalog-button-color);
+    color: var(--catalog-button-text-color);
   }
 
   .catalog-nav {
@@ -114,8 +115,8 @@
 
 @media screen and (min-width: 76rem) {
   .catalog-nav {
-    margin: 0;
     justify-content: space-between;
+    margin: 0;
   }
 
   .catalog-nav__button {
@@ -124,7 +125,7 @@
 }
 
 .catalog-nav__button:active {
-  background: #621055;
+  background: var(--catalog-button-color);
 }
 
 .catalog-nav__radio {
@@ -133,8 +134,8 @@
 
 @media (min-width: 22.5rem) {
   .catalog {
-    margin: 7.5rem auto 0;
     max-width: 76rem;
+    margin: 7.5rem auto 0;
   }
 }
 
@@ -168,34 +169,33 @@
 }
 
 .card__btn {
-  border: 1px solid #621055;
-  color: #621055;
+  border: 1px solid var(--catalog-card-border-color);
+  color: var(--catalog-card-text-color);
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 1rem;
   line-height: 18px;
   text-align: center;
-  color: #621055;
 }
 
 .card__price {
+  color: var(--catalog-card-price-color);
   font-family: "Raleway",
   sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  color: #F3B366;
 }
 
 .card_type_free-delivery {
-  background: #621055;
+  background: var(--free-card-bg-color);
   cursor: pointer;
 }
 
 .card_type_sale {
-  background: #B52B65;
+  background: var(--sale-card-bg-color);
   cursor: pointer;
 }
 
@@ -205,7 +205,7 @@
 
 .card__title_type_sale {
   margin: 0;
-  color: #F4F4F4;
+  color: var(--free-sale-card-text-color);
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.75rem;
@@ -213,8 +213,8 @@
 
 .card__img_type_sale {
   display: block;
-  margin: 2rem 0 0 auto;
   max-width: 9rem;
+  margin: 2rem 0 0 auto;
 }
 
 .card__img_position_left {
@@ -226,18 +226,18 @@
 }
 
 .modal-dialog {
-  display: flex;
-  justify-content: space-around;
-  flex-flow: wrap;
   position: fixed;
-  width: 100%;
-  height: 100vh;
   z-index: 200;
-  background: #FFF;
+  display: flex;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   overflow-y: auto;
+  justify-content: space-around;
+  flex-flow: wrap;
+  width: 100%;
+  height: 100vh;
+  background: var(--modal-dialog-bg-color);
 }
 
 .modal-dialog::-webkit-scrollbar {
@@ -257,15 +257,17 @@
 
 .modal-dialog__img {
   display: block;
-  width: 100%;
-  max-width: 530px;
+  width: 90%;
+  max-width: 33.125rem;
   margin: auto;
+  object-fit: cover;
+  border-radius: 47px;
 }
 
 .modal-dialog__page-header {
   margin: 0;
-  text-align: center;
   font-size: 2rem;
+  text-align: center;
 }
 
 .modal-dialog__text {
@@ -273,20 +275,19 @@
 }
 
 .modal-dialog__btn-price {
-  margin: 1rem auto 0;
-  max-width: 530px;
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
   align-items: center;
+  max-width: 530px;
+  margin: 1rem auto 0;
 }
 
 .modal-dialog__btn {
-  margin: 0.9375rem 0 0;
   padding: 0.875rem 4.25rem;
-  background: #621055;
-  border: 1px solid #621055;
-  color: #FFF;
+  margin: 0.9375rem 0 0;
+  background: var(--modal-dialog-btn-bg-color);
+  color: var(--modal-dialog-btn-text-color);
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.4375rem;
@@ -297,33 +298,33 @@
   margin: 0.625rem 0 0;
   font-weight: bold;
   font-size: 2rem;
-  color: #F3B366;
+  color: var(--modal-dialog-price-color);
 }
 
 .modal-dialog__characteristics {
+  margin: 1.25rem 0;
+  color: var(--modal-dialog-characteristics-text-color);
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1.75rem;
-  color: #B52B65;
-  margin: 1.25rem 0;
   text-align: center;
 }
 
 .modal-dialog__table {
+  max-width: 33.125rem;
   margin: 0 auto;
-  max-width: 530px;
 }
 
 .modal-dialog__item {
   padding: 0 1rem .375rem 0;
+  color: var(--modal-dialog-char-table-text-color);
   font-size: 1rem;
   line-height: 120%;
-  color: #31052A;
   vertical-align: top;
 }
 
 .modal-dialog__item_type_descr {
-  color: #999;
+  color: var(--modal-dialog-table-text-color);
 }
 
 .modal-dialog__close-btn {
@@ -343,16 +344,16 @@
   }
 
   .modal-dialog {
-    justify-content: space-between;
-    width: 80%;
-    max-width: 1216px;
-    background: #FFF;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    border: 3px solid #B52B65;
-    border-radius: 47px;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 76rem;
     max-height: 95vh;
+    border-radius: 47px;
+    border: 3px solid var(--modal-dialog-border-color);
+    background: var(--modal-dialog-bg-color);
   }
 
   .modal-dialog__container {
@@ -362,21 +363,22 @@
 
   .modal-dialog__page-header {
     margin: 0 2.875rem 0 0;
-    text-align: left;
     font-size: 3.125rem;
+    text-align: left;
   }
 
   .modal-dialog__text {
     display: block;
-    margin: 1.25rem 0 0;
+    width: 90%;
+    margin: 1.25rem auto 0;
     font-size: 1.125rem;
     line-height: 120%;
   }
 
   .modal-dialog__btn-price {
     justify-content: space-between;
-    margin: 1rem 2.875rem 0 0;
     align-items: center;
+    margin: 1rem 2.875rem 0 0;
   }
 
   .modal-dialog__btn {
@@ -384,10 +386,10 @@
   }
 
   .modal-dialog__price {
+    margin: 0;
     font-weight: bold;
     font-size: 3.125rem;
     line-height: 6rem;
-    margin: 0;
   }
 
   .modal-dialog__characteristics {
@@ -405,12 +407,10 @@
   }
 
   .modal-dialog__item_type_descr {
-    color: #999;
+    color: var(--modal-dialog-table-text-color);
   }
 
   .modal-dialog__close-btn {
     margin: 1.875rem auto; 
   }
-
 }
-

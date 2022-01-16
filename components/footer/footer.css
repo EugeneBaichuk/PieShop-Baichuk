@@ -1,10 +1,10 @@
-@import url(../../css/style.css);
+@import url(../../style.css);
 
 :root {
   --footer-bg-color: var(--purple);
   --footer-text: var(--white);
   --footer-policy-color: var(--dark-grey);
-}
+} 
 
 .footer {
   width: 100%;

@@ -1,10 +1,10 @@
-@import url(../../css/style.css);
+@import url(../../style.css);
 
-:root {
+/* :root {
   --hover-shadow-color: var(--purple);  
   --landing-card-bg: var(--light-grey);
   --landing-news-name-color: var(--pink);
-}
+} */
 
 .landing-cards {
   display: flex;

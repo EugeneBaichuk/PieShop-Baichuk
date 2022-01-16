@@ -1,0 +1,112 @@
+@import url(components/landing-page/landing-main-screen.css);
+@import url(components/catalog/catalog.css);
+@import url(components/sales/sales.css);
+
+:root {
+  --grey: #F4F4F4;
+  --dark-grey: #999;
+  --white: #FFF;
+  --purple: #621055;
+  --pink: #B52B65;
+  --orange: #F3B366;
+  --light-grey: #FCFCFC;
+  --brown-grey: #443E3E;
+}
+/* landing-page-var */
+:root {
+  --landing-header-color: var(--purple);
+  --landing-button-color: var(--purple);
+  --landing-slider-link-color: var(--pink);
+  --landing-advantages-name-color: var(--pink);
+  --landing-news-name-color: var(--pink);
+  --landing-card-bg: var(--light-grey);
+  --landing-card-text: var(--purple);
+  --main-screen-small-text-color: var(--purple);
+  --main-header-color: var(--pink);
+  --main-screen-header-color: var(--orange);
+  --email-header-color: var(--pink);
+  --email-form-bg: var(--light-grey);
+  --hover-shadow-color: var(--purple);
+  --border-color: var(--purple);
+  --email-form-input-text-color: var(--brown-grey);
+  --landing-button-text-color: var(--light-grey);
+  --scroll-btn-color: var(--pink);
+  --scroll-btn-arrow-color: var(--white);
+}
+/* catalog-var */
+:root {
+  --catalog-card-bg-color: var(--light-grey);
+  --free-card-bg-color: var(--purple);
+  --sale-card-bg-color: var(--pink);
+  --free-sale-card-text-color: var(--grey);
+  --catalog-card-text-color: var(--purple);
+  --catalog-card-border-color: var(--purple);
+  --catalog-card-price-color: var(--orange);
+  --catalog-button-color: var(--purple);
+  --catalog-button-mobile-text-color: var(--grey);
+  --catalog-button-text-color: var(--white);
+  --modal-dialog-bg-color: var(--white);
+  --modal-dialog-price-color: var(--orange);
+  --modal-dialog-btn-bg-color: var(--purple);
+  --modal-dialog-border-color: var(--pink);
+  --modal-dialog-btn-text-color: var(--grey);
+  --modal-dialog-characteristics-text-color: var(--pink);
+  --modal-dialog-char-table-text-color: var(--purple-black);
+  --modal-dialog-table-text-color: var(--dark-grey);
+}
+/* article-var */
+:root {
+  --articles-header-color: var(--pink);
+  --articles-items-color: var(--purple);
+  --stages-border-color: var(--pink);
+}
+/* contacts-var */
+:root {
+  --contacts-form-header-color: var(--dark-purple);
+  --contacts-input-text-color: var(--dark-grey);
+  --contacts-checkbox-label-color: var(--dark-purple);
+  --contacts-text-color: var(--dark-purple);
+  --contacts-input-button: var(--grey);
+}
+/* sales-var */
+:root {
+  --sales-card-color: var(--purple);
+  --sales-inner-card-color: var(--pink);
+  --sales-container-content-color: var(--white);
+  --promo-bg-color: var(--grey);
+  --timer-block-color: var(--white);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Raleway&display=swap');
+
+@font-face {
+  font-family: "LifehackSansRegular";
+  src: url("components/fonts/LifehackSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "LifehackBasicRegular";
+  src: url("components/fonts/LifehackBasicRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  font-variant-numeric: lining-nums;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}

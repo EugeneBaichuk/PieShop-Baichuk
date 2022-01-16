@@ -1,17 +1,13 @@
-const mainScroll = document.querySelector('.scroll-btn');
+const mainScroll = document.getElementById('scroll-top-btn');
+const footerBtn = document.querySelectorAll('.footer__input');
 
-
-mainScroll.addEventListener('click', (event) => {
-  event.preventDefault();
-  document.getElementById('top').scrollIntoView({
-    behavior: 'smooth',
-    block: 'end'
-  });
+footerBtn.forEach(btn => {
+  btn.addEventListener('click', smoothScroll(btn, 'e-mail'));
 });
+smoothScroll(mainScroll, 'top');
+window.addEventListener('scroll', showScrollBtn);
 
-window.addEventListener('scroll', checkBoxes);
-
-function checkBoxes() {
+function showScrollBtn() {
   const trigger = document.documentElement.scrollTop;
 
   if (trigger > 300) {
@@ -19,4 +15,14 @@ function checkBoxes() {
   } else {
     mainScroll.classList.remove('scroll-btn_show');
   }
+}
+
+function smoothScroll(btn, scrollCheckpoint) {
+  btn.addEventListener('click', (event) => {
+    event.preventDefault();
+    document.getElementById(scrollCheckpoint).scrollIntoView({
+      behavior: 'smooth',
+      block: 'end'
+    });
+  });
 }

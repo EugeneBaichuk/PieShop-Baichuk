@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../css/normalize.min.css">
+  <link rel="stylesheet" href="../../normalize.css">
+  <link href="../header/img/logo.svg" rel="shortcut icon" type="image/x-icon">  
   <link rel="stylesheet" href="../../components/catalog/catalog.css">
-  <link href="../header/img/logo.svg" rel="shortcut icon" type="image/x-icon">
   <script src="../header/js/script.js" defer></script>
   <script src="modal.js" defer></script>
   <script src="tabs.js" defer></script>
   <title>Catalog</title>
 </head>
+
 <body>
   <div class="catalog-page-wrapper">
     <header class="header">
@@ -20,35 +22,35 @@
       <a href="../../index.html" class="logo"><img src="../header/img/logo.svg" alt="logo" class="logo"></a>
       <div class="header__burger-menu-background nav_disabled"></div>
       <nav class="nav nav_type_burger nav_disabled">           
-          <ul>
-            <li><a class="nav__item nav__item_type_burger" href="../contacts/contacts.html">Контакты</a></li>
-            <li><a class="nav__item nav__item_type_burger" href="#">Каталог</a></li>
-            <li><a class="nav__item nav__item_type_burger" href="../sales/sales.html">Акции</a></li>
-            <li><a class="nav__item nav__item_type_burger" href="../articles/articles.html">Статьи</a></li>
-          </ul>
-          <p class="nav__contacts nav__contacts_type_burger">+7 (456) 234 36 96</p>
-          <p class="nav__adress nav__adress_type_burger">Москва, ул. Мечты, 21</p>
-          <div class="nav__social_type_burger">
-            <img class="nav__burger-social-img" src="../header/img/vk.svg" alt="vk-social">
-            <img class="nav__burger-social-img" src="../header/img/fb.svg" alt="facebook-social">
-            <img class="nav__burger-social-img" src="../header/img/inst.svg" alt="instagram-social">
-          </div>
-          <a href="#"><img class="nav__burger-close-button" src="../header/img/close-button.svg" alt="close-button"></a>
+        <ul>
+          <li><a class="nav__item nav__item_type_burger" href="../contacts/contacts.html">Контакты</a></li>
+          <li><a class="nav__item nav__item_type_burger" href="#">Каталог</a></li>
+          <li><a class="nav__item nav__item_type_burger" href="../sales/sales.html">Акции</a></li>
+          <li><a class="nav__item nav__item_type_burger" href="../articles/articles.html">Статьи</a></li>
+        </ul>
+        <p class="nav__contacts nav__contacts_type_burger">+7 (456) 234 36 96</p>
+        <p class="nav__adress nav__adress_type_burger">Москва, ул. Мечты, 21</p>
+        <div class="nav__social_type_burger">
+          <img class="nav__burger-social-img" src="../header/img/vk.svg" alt="vk-social">
+          <img class="nav__burger-social-img" src="../header/img/fb.svg" alt="facebook-social">
+          <img class="nav__burger-social-img" src="../header/img/inst.svg" alt="instagram-social">
+        </div>
+        <a href="#"><img class="nav__burger-close-button" src="../header/img/close-button.svg" alt="close-button"></a>
       </nav>
       <nav class="nav header__nav"> 
-          <p class="header__adress">Москва, ул. Мечты, 21</p>          
-          <ul class="header__menu">
-            <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../contacts/contacts.html">Контакты</a></li>
-            <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../catalog/catalog.html">Каталог</a></li>
-            <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../sales/sales.html">Акции</a></li>
-            <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../articles/articles.html">Статьи</a></li>
-          </ul>
-          <p class="phone header__phone"> +7 (456) 234 36 96 </p>
+        <p class="header__adress">Москва, ул. Мечты, 21</p>          
+        <ul class="header__menu">
+          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../contacts/contacts.html">Контакты</a></li>
+          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../catalog/catalog.html">Каталог</a></li>
+          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../sales/sales.html">Акции</a></li>
+          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../articles/articles.html">Статьи</a></li>
+        </ul>
+        <p class="phone header__phone"> +7 (456) 234 36 96 </p>
       </nav>  
     </header>
     
     <section class="catalog">
-      <h1 class="page-header">Каталог</h1>
+      <h1 class="page-header catalog__page-header">Каталог</h1>
       <nav class="catalog-nav">
         <a id="all" class="button catalog-nav__button"> <input type="radio" name="nav-item" class="catalog-nav__radio">Все вместе <div class="button__triangle button__triangle_dir_up"></div></a>
         <a id="fat" class="button catalog-nav__button catalog-nav__button_disabled catalog-nav__button_type_burger">Сытные пироги</a>
@@ -57,31 +59,31 @@
       </nav>
       <div class="card-wrapper">
         <div class="card card-wrapper__card card-wrapper__sweet-card">
-          <img src="../img/card-img-1.png" class="card__img" alt="...">
+          <img src="img/card-img-1.png" class="card__img" alt="card-img">
           <div class="card__body">
             <h5 class="card__title">Пирог с клубникой, малиной и черникой</h5>
             <div class="card__btn-price-wrapper">
-              <p class="card__price">40 &#8381;</p>
+              <p class="card__price">1250 &#8381;</p>
               <a href="#" class="button card__btn">Подробнее</a>
             </div>
           </div>
         </div>
         <div class="card card-wrapper__card card-wrapper__fat-card">
-          <img src="../img/card-img-2.png" class="card__img" alt="...">
+          <img src="img/card-img-2.png" class="card__img" alt="card-img">
           <div class="card__body">
             <h5 class="card__title">Пирог с апельсиновыми дольками и корицей</h5>
             <div class="card__btn-price-wrapper">
-              <p class="card__price">40 &#8381;</p>
+              <p class="card__price">1240 &#8381;</p>
               <a href="#" class="button card__btn">Подробнее</a>
             </div>
           </div>
         </div>
         <div class="card card-wrapper__card card-wrapper__pie-card card-wrapper__sweet-card">
-          <img src="../img/card-img-3.png" class="card__img" alt="...">
+          <img src="img/card-img-3.png" class="card__img" alt="card-img">
           <div class="card__body">
             <h5 class="card__title">Пирог с красной и черной смородиной и мандарином</h5>
             <div class="card__btn-price-wrapper">
-              <p class="card__price">40 &#8381;</p>
+              <p class="card__price">1440 &#8381;</p>
               <a href="#" class="button card__btn">Подробнее</a>
             </div>
           </div>
@@ -90,45 +92,45 @@
           <div class="card__body card__body_type_sale">
             <h5 class="card__title card__title_type_sale">Бесплатная<br> доставка</h5>
             <p class="card__text"> При заказе на сумму от 5000 рублей. <br><br> Заказывайте пироги на завтрак, обед и ужин, дарите их друзьям и родителям.</p>
-            <img src="../img/free-delivery-img.svg" class="card__img card__img_type_sale" alt="...">
+            <img src="img/free-delivery-img.svg" class="card__img card__img_type_sale" alt="card-img">
           </div>
         </div>
         <div class="card card-wrapper__card card-wrapper__pie-card">
-          <img src="../img/card-img-4.png" class="card__img" alt="...">
+          <img src="img/card-img-4.png" class="card__img" alt="card-img">
           <div class="card__body">
-            <h5 class="card__title">Пирог с клубникой, малиной и черникой</h5>
+            <h5 class="card__title">Пирог с красной и черной смородиной</h5>
             <div class="card__btn-price-wrapper">
-              <p class="card__price">40 &#8381;</p>
+              <p class="card__price">1360 &#8381;</p>
               <a href="#" class="button card__btn">Подробнее</a>
             </div>
           </div>
         </div>
         <div class="card card-wrapper__card card-wrapper__fat-card card-wrapper__sweet-card">
-          <img src="../img/card-img-5.png" class="card__img" alt="...">
+          <img src="img/card-img-5.png" class="card__img" alt="card-img">
           <div class="card__body">
-            <h5 class="card__title">Пирог с клубникой, малиной и черникой</h5>
+            <h5 class="card__title">Пирог с черникой, арахисом, манго и сметаной</h5>
             <div class="card__btn-price-wrapper">
-              <p class="card__price">40 &#8381;</p>
+              <p class="card__price">1870 &#8381;</p>
               <a href="#" class="button card__btn">Подробнее</a>
             </div>
           </div>
         </div>
         <div class="card card-wrapper__card card-wrapper__fat-card">
-          <img src="../img/card-img-6.png" class="card__img" alt="...">
+          <img src="img/card-img-6.png" class="card__img" alt="card-img">
           <div class="card__body">
-            <h5 class="card__title">Пирог с клубникой, малиной и черникой</h5>
+            <h5 class="card__title">Пирог с черникой и кремовым соусом</h5>
             <div class="card__btn-price-wrapper">
-              <p class="card__price">40 &#8381;</p>
+              <p class="card__price">940 &#8381;</p>
               <a href="#" class="button card__btn">Подробнее</a>
             </div>
           </div>
         </div>
         <div class="card card-wrapper__card card-wrapper__sweet-card">
-          <img src="../img/card-img-7.png" class="card__img" alt="...">
+          <img src="img/card-img-7.png" class="card__img" alt="card-img">
           <div class="card__body">
-            <h5 class="card__title">Пирог с клубникой, малиной и черникой</h5>
+            <h5 class="card__title">Пирог с клубникой, голубикой и сливками</h5>
             <div class="card__btn-price-wrapper">
-              <p class="card__price">40 &#8381;</p>
+              <p class="card__price">1770 &#8381;</p>
               <a href="#" class="button card__btn">Подробнее</a>
             </div>
           </div>
@@ -137,35 +139,35 @@
           <div class="card__body card__body_type_sale">
             <h5 class="card__title card__title_type_sale">Скидка 20%</h5>
             <p class="card__text"> При заказе трех и более пирогов. <br><br> Заказывайте пироги на завтрак, обед и ужин, дарите их друзьям и родителям</p>
-            <img src="../img/sale-card-img.svg" class="card__img card__img_type_sale card__img_position_left" alt="...">
+            <img src="img/sale-card-img.svg" class="card__img card__img_type_sale card__img_position_left" alt="card-img">
           </div>
         </div>
         <div class="card card-wrapper__card card-wrapper__pie-card">
-          <img src="../img/card-img-8.png" class="card__img" alt="...">
+          <img src="img/card-img-8.png" class="card__img" alt="card-img">
           <div class="card__body">
-            <h5 class="card__title">Пирог с клубникой, малиной и черникой</h5>
+            <h5 class="card__title">Пирог с вишней</h5>
             <div class="card__btn-price-wrapper">
-              <p class="card__price">40 &#8381;</p>
+              <p class="card__price">680 &#8381;</p>
               <a href="#" class="button card__btn">Подробнее</a>
             </div>
           </div>
         </div>
         <div class="card card-wrapper__card card-wrapper__fat-card">
-          <img src="../img/card-img-9.png" class="card__img" alt="...">
+          <img src="img/card-img-9.png" class="card__img" alt="card-img">
           <div class="card__body">
-            <h5 class="card__title">Пирог с клубникой, малиной и черникой</h5>
+            <h5 class="card__title">Пирог с яблоками, корицей и клюквой</h5>
             <div class="card__btn-price-wrapper">
-              <p class="card__price">40 &#8381;</p>
+              <p class="card__price">490 &#8381;</p>
               <a href="#" class="button card__btn">Подробнее</a>
             </div>
           </div>
         </div>
         <div class="card card-wrapper__card card-wrapper__pie-card">
-          <img src="../img/card-img-10.png" class="card__img" alt="...">
+          <img src="img/card-img-10.png" class="card__img" alt="card-img">
           <div class="card__body">
             <h5 class="card__title">Пирог с клубникой, малиной и черникой</h5>
             <div class="card__btn-price-wrapper">
-              <p class="card__price">40 &#8381;</p>
+              <p class="card__price">1250 &#8381;</p>
               <a href="#" class="button card__btn">Подробнее</a>
             </div>
           </div>
@@ -176,7 +178,7 @@
     <div class="modal-overlay modal-overlay_closed">
       <section class="modal-dialog">
         <div class="modal-dialog__container">
-          <img src="../catalog/img/modal-img-strawberry.png" alt="" class="modal-dialog__img">
+          <img src="../catalog/img/modal-img-strawberry.png" alt="modal-img" class="modal-dialog__img">
           <p class="modal-dialog__text">Это очень вкусный пирог с кисло-сладкой ягодной начинкой, которая просто тает во рту, оставляя приятное послевкусие и навевая воспоминания о солнечном лете</p>
         </div>
         <div class="modal-dialog__container">
@@ -230,16 +232,24 @@
             <p class="footer__contacts-item footer__contacts_mob">Москва, ул. Мечты, 21</p>
           </div>
           <div class="footer__logo-social footer__wrapper-item_mob">
-            <a class="footer__logo-item footer__logo-social_logo-mob" href="../../index.html"><img src="../footer/img/footer-logo.svg" alt="logo"></a>
+            <a class="footer__logo-item footer__logo-social_logo-mob" href="../../index.html">
+              <img src="../footer/img/footer-logo.svg" alt="logo">
+            </a>
             <div class="footer__social-items footer__logo-social_social-mob">
-              <a class="footer__social-item" href="#"><img class="footer__social-item" src="../footer/img/vk-footer.svg" alt="vk-social"></a>
-              <a class="footer__social-item footer__social-item_position" href="#"><img class="footer__social-item" src="../footer/img/fb-footer.svg" alt="fb-social"></a>
-              <a class="footer__social-item" href="#"><img class="footer__social-item" src="../footer/img/inst-footer.svg" alt="vk-social"></a>
+              <a class="footer__social-item" href="#">
+                <img class="footer__social-item" src="../footer/img/vk-footer.svg" alt="vk-social">
+              </a>
+              <a class="footer__social-item footer__social-item_position" href="#">
+                <img class="footer__social-item" src="../footer/img/fb-footer.svg" alt="fb-social">
+              </a>
+              <a class="footer__social-item" href="#">
+                <img class="footer__social-item" src="../footer/img/inst-footer.svg" alt="vk-social">
+              </a>
             </div>
           </div>
         </div>
         <div class="footer__wrapper-item">
-          <a class="footer__input footer__wrapper-item_input-pos" href="../../index.html">Подписаться на рассылку</a>
+          <a class="footer__input footer__wrapper-item_input-pos" href="../../index.html#e-mail">Подписаться на рассылку</a>
           <nav class="footer__nav footer__wrapper-item_nav-pos">
             <ul class="footer__nav-items">
               <li class="footer__nav-item"><a class="footer__nav-link"  href="#">Каталог</a></li>
@@ -258,9 +268,15 @@
         <div class="footer__logo-social">
           <a class="footer__logo-item footer__logo-social_logo-desc" href="../../index.html"><img class="footer__logo-item" src="../footer/img/footer-logo.svg" alt="logo"></a>
           <div class="footer__social-items">
-            <a class="footer__social-item" href="#"><img class="footer__social-item" src="../footer/img/vk-footer.svg" alt="vk-social"></a>
-            <a class="footer__social-item footer__social-item_position" href="#"><img class="footer__social-item" src="../footer/img/fb-footer.svg" alt="fb-social"></a>
-            <a class="footer__social-item" href="#"><img class="footer__social-item" src="../footer/img/inst-footer.svg" alt="vk-social"></a>
+            <a class="footer__social-item" href="#">
+              <img class="footer__social-item" src="../footer/img/vk-footer.svg" alt="vk-social">
+            </a>
+            <a class="footer__social-item footer__social-item_position" href="#">
+              <img class="footer__social-item" src="../footer/img/fb-footer.svg" alt="fb-social">
+            </a>
+            <a class="footer__social-item" href="#">
+              <img class="footer__social-item" src="../footer/img/inst-footer.svg" alt="vk-social">
+            </a>
           </div>
         </div>
         <nav class="footer__nav">
@@ -276,11 +292,11 @@
           </ul>
         </nav>
         <div class="footer__contacts">
-          <a class="footer__input" href="../../index.html">Подписаться на рассылку</a>
+          <a class="footer__input" href="../../index.html#e-mail">Подписаться на рассылку</a>
           <div class = "footer__container">
             <p class="footer__contacts-item">pirogi.support@gmail.com</p>
-          <h1 class="footer__contacts-item">+7 (456) 234 36 96</h1>
-          <p class="footer__contacts-item">Москва, ул. Мечты, 21</p>
+            <h1 class="footer__contacts-item">+7 (456) 234 36 96</h1>
+            <p class="footer__contacts-item">Москва, ул. Мечты, 21</p>
           </div>
         </div>
       </div>
