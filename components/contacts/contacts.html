@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="../../manifest/manifest.json">
   <link rel="stylesheet" href="../../normalize.css">
   <link href="../header/img/logo.svg" rel="shortcut icon" type="image/x-icon">
   <link rel="stylesheet" href="../contacts/contacts.css">
@@ -21,7 +22,7 @@
       <nav class="nav nav_type_burger nav_disabled">           
         <ul>
           <li><a class="nav__item nav__item_type_burger" href="#">Контакты</a></li>
-          <li><a class="nav__item nav__item_type_burger" href="../catalog/catalog.css">Каталог</a></li>
+          <li><a class="nav__item nav__item_type_burger" href="../catalog/catalog.html">Каталог</a></li>
           <li><a class="nav__item nav__item_type_burger" href="../sales/sales.html">Акции</a></li>
           <li><a class="nav__item nav__item_type_burger" href="../articles/articles.html">Статьи</a></li>
         </ul>
@@ -51,10 +52,10 @@
       <div class="contacts__form-wrapper">
         <form action="submit" class="form contacts__form">
           <label class="contacts__form-label"> Ваше имя: <br>
-            <input class="form__input-text contacts__input-text" type="text" name="e-mail" placeholder="Введите ваше имя"> 
+            <input class="form__input-text contacts__input-text" type="text" name="name" maxlength="27" required placeholder="Введите ваше имя"> 
           </label>
           <label class="contacts__form-label"> Ваш номер телефона: <br>
-            <input class="form__input-text contacts__input-text" type="text" name="e-mail" placeholder="+ 375 (xxx) xxx-xx-xx"> 
+            <input class="form__input-text contacts__input-text" type="tel" name="tel" minlength="6" maxlength="20" required placeholder="+ 375 (xxx) xxx-xx-xx"> 
           </label>
           <input class="form__input-button contacts__input-button" type="submit" value="отправить">
           <input type="checkbox" id="checkbox" class="contacts__checkbox">

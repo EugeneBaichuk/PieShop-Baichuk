@@ -15,6 +15,7 @@
   <script src="components/landing-page/smoothScroll.js" defer></script>
   <script src="components/landing-page/slider.js" defer></script>
   <script src="components/landing-page/article-slider.js" defer></script>
+  <script src="components/landing-page/emailForm.js" defer></script>
 </head>
 
 <body>
@@ -175,7 +176,7 @@
       <form action="submit" class="form">
           <h2 class="form__header form__header_font_basic">Подпишитесь на нашу рассылку</h2>
           <p class="form__header form__header_font_regular">и первым узнавайте об акциях и скидках!</p>
-          <input class="form__input-text" type="text" name="e-mail" placeholder="Введите ваш e-mail"> 
+          <input class="form__input-text" type="text" name="email" placeholder="Введите ваш e-mail" minlength="6" maxlength="30" required> 
           <input class="form__input-button" type="submit">
       </form>
     </div>
