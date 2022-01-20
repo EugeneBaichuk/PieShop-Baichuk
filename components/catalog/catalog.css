@@ -182,7 +182,7 @@
 .card__price {
   color: var(--catalog-card-price-color);
   font-family: "Raleway",
-  sans-serif;
+    sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -227,7 +227,7 @@
 
 .modal-dialog {
   position: fixed;
-  z-index: 200;
+  z-index: 300;
   display: flex;
   left: 50%;
   top: 50%;
@@ -238,6 +238,7 @@
   width: 100%;
   height: 100vh;
   background: var(--modal-dialog-bg-color);
+  cursor: pointer;
 }
 
 .modal-dialog::-webkit-scrollbar {
@@ -334,7 +335,7 @@
 @media (min-width:50.5rem) {
   .modal-overlay {
     position: fixed;
-    z-index: 100;
+    z-index: 202;
     top: 0;
     right: 0;
     left: 0;
@@ -396,7 +397,7 @@
   }
 
   .modal-dialog__table {
-    width:100%;
+    width: 100%;
   }
 
   .modal-dialog__item {
@@ -410,6 +411,6 @@
   }
 
   .modal-dialog__close-btn {
-    margin: 1.875rem auto; 
+    margin: 1.875rem auto;
   }
 }

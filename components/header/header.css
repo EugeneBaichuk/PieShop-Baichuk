@@ -9,7 +9,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 60;
+  z-index: 201;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -20,6 +20,11 @@
 
 .logo {
   display: block;
+}
+
+.logo:focus {
+  outline: 1px solid #621055;
+  border-radius: 15px;
 }
 
 .header__burger-menu-link {
@@ -146,11 +151,13 @@
     text-decoration: none;
   }
 
-  .header__nav-link:hover {
+  .header__nav-link:hover,
+  .header__nav-link:focus {
     border-radius: 50px;
     box-shadow: inset 0 0 0 2px var(--header-item-color);
     color: var(--header-text-color);
     transform: translateY(-0.1em);
+    outline: none;
   }
 
   .header__nav-link:active {

@@ -198,6 +198,8 @@
   border-radius: 15px;
   background: var(--landing-slider-link-color);
   cursor: pointer;
+  position: relative;
+  z-index: 200;
 }
 
 .slider__link-inner {
@@ -259,15 +261,20 @@
     background: var(--scroll-btn-color);
     bottom: 3rem;
     right: 3rem;
-    z-index: 200;
+    z-index: 201;
     border-radius: 50px;
     transform: translateX(400%);
-    transition: transform 0.4s ease;
+    transition: 0.4s ease;
   }
 
   .scroll-btn_show {
     transform: translateX(0);
   }
+
+  .scroll-btn:hover {
+    background: var(--purple);
+  }
+
 
   .scroll-btn__arrow {
     font-size: 70px;
@@ -333,6 +340,10 @@
     margin: 0 1rem;
   }
 
+  .slider__btns-container {
+    display: none;
+  }
+
   .slider__content {
     font-size: 24px;
     line-height: 28px;  
@@ -354,15 +365,19 @@
     transition: 0.2s linear;
   }
 
-  .slider__link:hover {
+  .slider__link:hover,
+  .slider__link:focus {
     box-shadow: inset 0 0 0 4px var(--landing-button-color);
     opacity: .97;
     transition: 0.2s linear;
+    outline: none;
   }
 
-  .slider__link_type_bg-changed:hover {
+  .slider__link_type_bg-changed:hover,
+  .slider__link_type_bg-changed:focus {
     box-shadow: inset 0 0 0 4px var(--landing-slider-link-color);
     opacity: .97;
+    outline: none;
   }
 
   .slider__link:hover .slider__content_type_anim {
@@ -707,9 +722,11 @@
   }
 
   .articles__carousel {
+    position: relative;
     overflow: hidden;
     height: 530px;
     width: 53rem;
+    z-index: 60;
   }
 
   .landing-cards__articles {

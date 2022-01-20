@@ -20,7 +20,7 @@
 
 <body>
 <div class="landing-page-wrapper">
-  <a href="#" id="top" class="top-scroll-checkpoint"></a>
+  <a href="#" id="top" class="top-scroll-checkpoint" title="top-scroll"></a>
   
   <div class="content-loading">
     <section class="bg"></section>
@@ -29,16 +29,16 @@
   
 
   <header class="header">
-    <a href="#" class="header__burger-menu-link"><img  src="components/header/img/burger-menu.svg" alt="burger-menu"></a>
+    <a href="#" class="header__burger-menu-link" title="open menu"><img  src="components/header/img/burger-menu.svg" alt="burger-menu"></a>
     <p class="phone phone_type_laptop phone_disabled">+7 (456) 234 36 96</p>
-    <a href="#" class="logo"><img src="components/header/img/logo.svg" alt="logo" class="logo"></a>
+    <a href="#" class="logo" tabindex="1"><img src="components/header/img/logo.svg" alt="logo" class="logo" title="logo"></a>
     <div class="header__burger-menu-background nav_disabled"></div>
     <nav class="nav nav_type_burger nav_disabled">           
       <ul>
-        <li><a class="nav__item nav__item_type_burger" href="components/contacts/contacts.html">Контакты</a></li>
-        <li><a class="nav__item nav__item_type_burger" href="components/catalog/catalog.html">Каталог</a></li>
-        <li><a class="nav__item nav__item_type_burger" href="components/sales/sales.html">Акции</a></li>
-        <li><a class="nav__item nav__item_type_burger" href="components/articles/articles.html">Статьи</a></li>
+        <li><a class="nav__item nav__item_type_burger" href="components/contacts/contacts.html" title="contacts">Контакты</a></li>
+        <li><a class="nav__item nav__item_type_burger" href="components/catalog/catalog.html" title="catalog">Каталог</a></li>
+        <li><a class="nav__item nav__item_type_burger" href="components/sales/sales.html" title="sales">Акции</a></li>
+        <li><a class="nav__item nav__item_type_burger" href="components/articles/articles.html" title="articles">Статьи</a></li>
       </ul>
       <p class="nav__contacts nav__contacts_type_burger">+7 (456) 234 36 96</p>
       <p class="nav__adress nav__adress_type_burger">Москва, ул. Мечты, 21</p>
@@ -47,22 +47,22 @@
         <img class="nav__burger-social-img" src="components/header/img/fb.svg" alt="facebook-social">
         <img class="nav__burger-social-img" src="components/header/img/inst.svg" alt="instagram-social">
       </div>
-      <a href="#"><img class="nav__burger-close-button" src="components/header/img/close-button.svg" alt="close-button"></a>
+      <a href="#"><img class="nav__burger-close-button" src="components/header/img/close-button.svg" alt="close-button" title="close menu"></a>
     </nav>
     <nav class="nav header__nav"> 
         <p class="header__adress">Москва, ул. Мечты, 21</p>          
         <ul class="header__menu">
-          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="components/contacts/contacts.html">Контакты</a></li>
-          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="components/catalog/catalog.html">Каталог</a></li>
-          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="components/sales/sales.html">Акции</a></li>
-          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="components/articles/articles.html">Статьи</a></li>
+          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="components/contacts/contacts.html" tabindex="2" title="contacts">Контакты</a></li>
+          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="components/catalog/catalog.html" tabindex="3" title="catalog">Каталог</a></li>
+          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="components/sales/sales.html" tabindex="4" title="sales">Акции</a></li>
+          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="components/articles/articles.html" tabindex="5" title="articles">Статьи</a></li>
         </ul>
         <p class="phone header__phone"> +7 (456) 234 36 96 </p>
     </nav>
   </header>  
 
-  <a id="scroll-top-btn" href="#top" class="scroll-btn">
-    <p class="scroll-btn__arrow"><img class="scroll-btn__arrow" src="components/landing-page/img/top-arrow.svg" alt=""> </p>
+  <a id="scroll-top-btn" href="#top" class="scroll-btn" tabindex="0" title="scroll button">
+    <p class="scroll-btn__arrow"><img class="scroll-btn__arrow" src="components/landing-page/img/top-arrow.svg" alt="scroll-button"> </p>
   </a>
 <!-- &#11014; -->
   <main>
@@ -71,36 +71,36 @@
         <h1 class="pie-shop-adv__header main-screen_align_text">Пироговая N1</h1>
         <h2 class="pie-shop-adv__paragraph main-screen_align_text">Домашние пироги для всей семьи<br> со скидкой 20%<br></h2>
         <h3 class="pie-shop-adv__small-paragraph main-screen_align_text">Проводите время с семьей, а не с духовкой</h3>
-        <a class="button main-screen__button" href="components/catalog/catalog.html" type="button"><p class="main-screen__btn-text">Подробнее</p></a>
+        <a class="button main-screen__button tab" href="components/catalog/catalog.html" type="button" tabindex="6" title="show catalog"><p class="main-screen__btn-text">Подробнее</p></a>
         <p class="pie-shop-adv__small-paragraph main-screen_align_text pie-shop-adv__small-paragraph_disp_none">... ммм, скоро будет вкусно</p>
       </section>
       <div class=main-screen__block></div>
       <section class="main-screen__slider">
-        <a href="components/sales/sales.html" class="slider__link">
+        <a href="components/sales/sales.html" class="slider__link" title="show sales">
           <p class="slider__content">Скидка 20% при заказе трех и более пирогов</p>
           <p class="slider__content slider__content_more">подробнее</p>
         </a>
-        <a href="components/sales/sales.html" class="slider__link-inner slider__link_disabled">
-          <p class="slider__content">При заказе от 5000 &#8381 доставка бесплатно</p>
+        <a href="components/sales/sales.html" class="slider__link-inner slider__link_disabled" title="show sales">
+          <p class="slider__content">При заказе от 5000 &#8381; доставка бесплатно</p>
           <p class="slider__content slider__content_more">подробнее</p>
         </a>
       </section>
       <div class="slider__btns-wrapper"><div class="slider-btns slider__btns-container">
-          <a href="#" class="slider-btns__link ">
+          <a href="#" class="slider-btns__link" title="prev. slide">
             <img src="components/landing-page/img/main-sale-slider.svg" alt="slider-button" class="slider-btns__btn slider__button-left">
           </a>
-          <a href="#" class="slider-btns__link">
+          <a href="#" class="slider-btns__link" title="next slide">
             <img src="components/landing-page/img/main-sale-slider.svg" alt="slider-button" class="slider-btns__btn slider__button-right">
           </a>
         </div></div>
        
       <section class="main-screen__slider-desctop">
-        <a href="components/sales/sales.html" class="slider__link">
+        <a href="components/sales/sales.html" class="slider__link" tabindex="7" title="show sales">
           <p class="slider__content slider__link_type_animated">Скидка 20% при заказе трех и более пирогов</p>
           <p class="slider__content slider__content_more slider__content_type_anim">подробнее</p>
         </a>
-        <a href="components/sales/sales.html" class="slider__link slider__link_type_bg-changed">
-          <p class="slider__content slider__link_type_animated">При заказе от 5000 &#8381 доставка бесплатно</p>
+        <a href="components/sales/sales.html" class="slider__link slider__link_type_bg-changed" tabindex="8" title="show sales">
+          <p class="slider__content slider__link_type_animated">При заказе от 5000 &#8381; доставка бесплатно</p>
           <p class="slider__content slider__content_more slider__content_type_anim">подробнее</p>
         </a>
       </section>
@@ -126,16 +126,16 @@
     <section class="landing-catalog">
       <h1 class="block-header landing-catalog__block-header">в нашем каталоге</h1>
       <div class="landing-cards" >
-        <a class ="landing-card landing-card_bg_sweet" href="components/catalog/catalog.html">
+        <a class ="landing-card landing-card_bg_sweet tab" href="components/catalog/catalog.html" tabindex="9" title="show catalog">
           <p class="landing-card__label">Сладкие пироги</p>
         </a>
-        <a class ="landing-card landing-card_bg_fat" href="components/catalog/catalog.html">
+        <a class ="landing-card landing-card_bg_fat tab" href="components/catalog/catalog.html" tabindex="10" title="show catalog">
           <p class="landing-card__label">Сытные пироги</p>
         </a>
-        <a class ="landing-card landing-card_bg_morse" href="components/catalog/catalog.html">
+        <a class ="landing-card landing-card_bg_morse tab" href="components/catalog/catalog.html" tabindex="11" title="show catalog">
           <p class="landing-card__label">Напитки и морсы</p>
         </a>
-        <a class ="landing-card landing-card_bg_pie" href="components/catalog/catalog.html">
+        <a class ="landing-card landing-card_bg_pie tab" href="components/catalog/catalog.html" tabindex="12" title="show catalog">
           <p class="landing-card__label">Пирожки</p>
         </a>
       </div>
@@ -147,27 +147,27 @@
         <div class="articles__carousel">
           <div id="imgs" class="landing-cards landing-cards__articles">
             <a class ="landing-card landing-card__articles
-            landing-card_bg_strawberry" href="#">
-              <p class="landing-card__text">Как приготовить пирог «Клубничный» <br>у себя дома</p>
+            landing-card_bg_strawberry tab" href="components/articles/articles.html" tabindex="-1" title="show articles">
+              <p class="landing-card__text">Как приготовить пирог &laquo;Клубничный&raquo; <br>у себя дома</p>
             </a>
-            <a class ="landing-card landing-card__articles landing-card__first-article landing-card_bg_health" href="#">
+            <a class ="landing-card landing-card__articles landing-card__first-article landing-card_bg_health tab" href="components/articles/articles.html" tabindex="-1" title="show articles">
               <p class="landing-card__text">5 полезных для здоровья веществ, которые есть в морсах</p>
             </a>
             <a class ="landing-card landing-card__articles landing-card_bg_advantage
-            landing-card__last-article " href="#">
+            landing-card__last-article tab" href="components/articles/articles.html" tabindex="-1" title="show articles">
               <p class="landing-card__text">Почему наши пироги самые лучшие?</p>
             </a>
             <a class ="landing-card landing-card__articles landing-card_bg_recipe
-            landing-card__last-article" href="#">
-              <p class="landing-card__text">Как приготовить пирог «Маргарита» <br>у себя дома</p>
+            landing-card__last-article tab" href="components/articles/articles.html" tabindex="-1" title="show articles">
+              <p class="landing-card__text">Как приготовить пирог &laquo;Маргарита&raquo; <br>у себя дома</p>
             </a>
           </div>
         </div>
       </div>
       <div class="article__slider-container">
         <div class="article__slider-btns">
-          <img id = "left" src="components/landing-page/img/main-sale-slider.svg" alt="slider-button"  class="article__slider-btn">
-          <img id = "right" src="components/landing-page/img/main-sale-slider.svg" alt="slider-button"  class="article__slider-btn slider__button-right article__button-right">
+          <img id = "left" src="components/landing-page/img/main-sale-slider.svg" alt="slider-button"  class="article__slider-btn tab">
+          <img id = "right" src="components/landing-page/img/main-sale-slider.svg" alt="slider-button"  class="article__slider-btn slider__button-right article__button-right tab">
         </div>
       </div>
     </section>
@@ -176,8 +176,8 @@
       <form action="submit" class="form">
           <h2 class="form__header form__header_font_basic">Подпишитесь на нашу рассылку</h2>
           <p class="form__header form__header_font_regular">и первым узнавайте об акциях и скидках!</p>
-          <input class="form__input-text" type="text" name="email" placeholder="Введите ваш e-mail" minlength="6" maxlength="30" required> 
-          <input class="form__input-button" type="submit">
+          <input class="form__input-text tab" type="text" name="email" placeholder="Введите ваш e-mail" minlength="6" maxlength="30" required tabindex="17"> 
+          <input class="form__input-button tab" type="submit" tabindex="18" value="Отправить">
       </form>
     </div>
   </main>
@@ -191,45 +191,45 @@
           <p class="footer__contacts-item footer__contacts_mob">Москва, ул. Мечты, 21</p>
         </div>
         <div class="footer__logo-social footer__wrapper-item_mob">
-          <a class="footer__logo-item footer__logo-social_logo-mob" href="index.html">
+          <a class="footer__logo-item footer__logo-social_logo-mob" href="index.html" title="logo">
             <img src="components/footer/img/footer-logo.svg" alt="logo">
           </a>
           <div class="footer__social-items footer__logo-social_social-mob">
-            <a class="footer__social-item" href="#">
+            <a class="footer__social-item" href="#" title="vk">
               <img class="footer__social-item" src="components/footer/img/vk-footer.svg" alt="vk-social">
             </a>
-            <a class="footer__social-item footer__social-item_position" href="#">
+            <a class="footer__social-item footer__social-item_position" href="#" title="fb">
               <img class="footer__social-item" src="components/footer/img/fb-footer.svg" alt="fb-social">
             </a>
-            <a class="footer__social-item" href="#">
-              <img class="footer__social-item" src="components/footer/img/inst-footer.svg" alt="vk-social">
+            <a class="footer__social-item" href="#" title="inst">
+              <img class="footer__social-item" src="components/footer/img/inst-footer.svg" alt="inst-social">
             </a>
           </div>
         </div>
       </div>
       <div class="footer__wrapper-item">
-        <a class="footer__input footer__wrapper-item_input-pos" href="#e-mail">Подписаться на рассылку</a>
+        <a class="footer__input footer__wrapper-item_input-pos" href="#e-mail" title="subscribe">Подписаться на рассылку</a>
         <nav class="footer__nav footer__wrapper-item_nav-pos">
           <ul class="footer__nav-items">
             <li class="footer__nav-item">
-              <a class="footer__nav-link"  href="components/catalog/catalog.html">Каталог</a>
+              <a class="footer__nav-link"  href="components/catalog/catalog.html" title="catalog">Каталог</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="components/sales/sales.html">Акции</a>
+              <a class="footer__nav-link" href="components/sales/sales.html" title="sales">Акции</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="components/contacts/contacts.html">Контакты</a>
+              <a class="footer__nav-link" href="components/contacts/contacts.html" title="contacts">Контакты</a>
             </li>
           </ul>
           <ul class="footer__nav-items">
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#">О нас</a>
+              <a class="footer__nav-link" href="#" title="main page">О нас</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="components/articles/articles.html">Статьи</a>
+              <a class="footer__nav-link" href="components/articles/articles.html" title="articles">Статьи</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="components/articles/articles.html">Новости</a>
+              <a class="footer__nav-link" href="components/articles/articles.html" title="news">Новости</a>
             </li>
           </ul>
         </nav>
@@ -237,15 +237,15 @@
     </div>
     <div class="footer__wrapper-desctop">
       <div class="footer__logo-social">
-        <a class="footer__logo-item footer__logo-social_logo-desc" href="index.html"><img class="footer__logo-item" src="components/footer/img/footer-logo.svg" alt="logo"></a>
+        <a class="footer__logo-item footer__logo-social_logo-desc" href="index.html" tabindex="19" title="logo"><img class="footer__logo-item" src="components/footer/img/footer-logo.svg" alt="logo"></a>
         <div class="footer__social-items">
-          <a class="footer__social-item" href="#">
+          <a class="footer__social-item footer-tab" href="#" tabindex="20" title="vk">
             <img class="footer__social-item" src="components/footer/img/vk-footer.svg" alt="vk-social">
           </a>
-          <a class="footer__social-item footer__social-item_position" href="#">
+          <a class="footer__social-item footer__social-item_position footer-tab" href="#" tabindex="21" title="fb">
             <img class="footer__social-item" src="components/footer/img/fb-footer.svg" alt="fb-social">
           </a>
-          <a class="footer__social-item" href="#">
+          <a class="footer__social-item footer-tab" href="#" tabindex="22" title="inst">
             <img class="footer__social-item" src="components/footer/img/inst-footer.svg" alt="vk-social">
           </a>
       </div>
@@ -253,29 +253,29 @@
       <nav class="footer__nav">
         <ul class="footer__nav-items">
           <li class="footer__nav-item">
-            <a class="footer__nav-link"  href="components/catalog/catalog.html">Каталог</a>
+            <a class="footer__nav-link footer-tab"  href="components/catalog/catalog.html" tabindex="23" title="catalog">Каталог</a>
           </li>
           <li class="footer__nav-item">
-            <a class="footer__nav-link" href="components/sales/sales.html">Акции</a>
+            <a class="footer__nav-link footer-tab" href="components/sales/sales.html" tabindex="24" title="sales">Акции</a>
           </li>
           <li class="footer__nav-item">
-            <a class="footer__nav-link" href="components/contacts/contacts.html">Контакты</a>
+            <a class="footer__nav-link footer-tab" href="components/contacts/contacts.html" tabindex="25" title="contacts">Контакты</a>
           </li>
         </ul>
         <ul class="footer__nav-items">
           <li class="footer__nav-item">
-            <a class="footer__nav-link" href="#">О нас</a>
+            <a class="footer__nav-link footer-tab" href="#" tabindex="26" title="main-page">О нас</a>
           </li>
           <li class="footer__nav-item">
-            <a class="footer__nav-link" href="components/articles/articles.html">Статьи</a>
+            <a class="footer__nav-link footer-tab" href="components/articles/articles.html" tabindex="27" title="articles">Статьи</a>
           </li>
           <li class="footer__nav-item">
-            <a class="footer__nav-link" href="components/articles/articles.html">Новости</a>
+            <a class="footer__nav-link footer-tab" href="components/articles/articles.html" tabindex="28" title="news">Новости</a>
           </li>
         </ul>
       </nav>
       <div class="footer__contacts">
-        <a class="footer__input" href="#e-mail">Подписаться на рассылку</a>
+        <a class="footer__input footer-tab" href="#e-mail" tabindex="29" title="subscribe">Подписаться на рассылку</a>
         <div class = "footer__container">
           <p class="footer__contacts-item">pirogi.support@gmail.com</p>
           <h1 class="footer__contacts-item">+7 (456) 234 36 96</h1>
@@ -285,7 +285,7 @@
     </div>
     <div class="footer__policy">
       <p class="footer__policy-item">Политика конфиденциальности</p>
-      <p class="footer__policy-item">&#169 2021, All rights reserved</p>  
+      <p class="footer__policy-item">&#169; 2021, All rights reserved</p>  
     </div>
   </footer>
 </div>

@@ -110,6 +110,11 @@
   margin: 4.4375rem 0 0;
 }
 
+.footer-tab:focus {
+  outline: 2px solid var(--white);
+  border-radius: 50px;
+}
+
 @media (min-width: 26.5rem) {
   .footer {
     padding: 1rem 0;
@@ -155,6 +160,11 @@
 
   .footer__logo-social_logo-desc {
     margin: 0 auto;
+  }
+
+  .footer__logo-social_logo-desc:focus {
+    outline: 2px solid var(--white);
+    border-radius: 15px;
   }
 
   .footer__logo-item {

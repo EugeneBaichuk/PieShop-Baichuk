@@ -15,16 +15,16 @@
 <body>
   <div class="contacts-page-wrapper">
     <header class="header">
-      <a href="#" class="header__burger-menu-link"><img  src="../header/img/burger-menu.svg" alt="burger-menu"></a>
+      <a href="#" class="header__burger-menu-link" title="menu"><img  src="../header/img/burger-menu.svg" alt="burger-menu"></a>
       <p class="phone phone_type_laptop phone_disabled">+7 (456) 234 36 96</p>
-      <a href="../../index.html" class="logo"><img src="../header/img/logo.svg" alt="logo" class="logo"></a>
+      <a href="../../index.html" class="logo" title="logo"><img src="../header/img/logo.svg" alt="logo" class="logo"></a>
       <div class="header__burger-menu-background nav_disabled"></div>
       <nav class="nav nav_type_burger nav_disabled">           
         <ul>
-          <li><a class="nav__item nav__item_type_burger" href="#">Контакты</a></li>
-          <li><a class="nav__item nav__item_type_burger" href="../catalog/catalog.html">Каталог</a></li>
-          <li><a class="nav__item nav__item_type_burger" href="../sales/sales.html">Акции</a></li>
-          <li><a class="nav__item nav__item_type_burger" href="../articles/articles.html">Статьи</a></li>
+          <li><a class="nav__item nav__item_type_burger" href="#" title="contacts">Контакты</a></li>
+          <li><a class="nav__item nav__item_type_burger" href="../catalog/catalog.html" title="catalog">Каталог</a></li>
+          <li><a class="nav__item nav__item_type_burger" href="../sales/sales.html" title="sales">Акции</a></li>
+          <li><a class="nav__item nav__item_type_burger" href="../articles/articles.html" title="articles">Статьи</a></li>
         </ul>
         <p class="nav__contacts nav__contacts_type_burger">+7 (456) 234 36 96</p>
         <p class="nav__adress nav__adress_type_burger">Москва, ул. Мечты, 21</p>
@@ -33,15 +33,15 @@
           <img class="nav__burger-social-img" src="../header/img/fb.svg" alt="facebook-social">
           <img class="nav__burger-social-img" src="../header/img/inst.svg" alt="instagram-social">
         </div>
-        <a href="#"><img class="nav__burger-close-button" src="../header/img/close-button.svg" alt="close-button"></a>
+        <a href="#" title="close menu"><img class="nav__burger-close-button" src="../header/img/close-button.svg" alt="close-button"></a>
       </nav>
       <nav class="nav header__nav"> 
         <p class="header__adress">Москва, ул. Мечты, 21</p>          
         <ul class="header__menu">
-          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="#">Контакты</a></li>
-          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../catalog/catalog.html">Каталог</a></li>
-          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../sales/sales.html">Акции</a></li>
-          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../articles/articles.html">Статьи</a></li>
+          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="#" title="contacts">Контакты</a></li>
+          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../catalog/catalog.html" title="catalog">Каталог</a></li>
+          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../sales/sales.html" title="sales">Акции</a></li>
+          <li class="nav__item header__nav-item"><a class="header__nav-link"  href="../articles/articles.html" title="articles">Статьи</a></li>
         </ul>
         <p class="phone header__phone"> +7 (456) 234 36 96 </p>
       </nav>  
@@ -55,10 +55,10 @@
             <input class="form__input-text contacts__input-text" type="text" name="name" maxlength="27" required placeholder="Введите ваше имя"> 
           </label>
           <label class="contacts__form-label"> Ваш номер телефона: <br>
-            <input class="form__input-text contacts__input-text" type="tel" name="tel" minlength="6" maxlength="20" required placeholder="+ 375 (xxx) xxx-xx-xx"> 
+            <input class="form__input-text contacts__input-text" type="tel" name="tel" minlength="6" maxlength="20" required placeholder="+ 375 (XX) XXX-XX-XX"> 
           </label>
-          <input class="form__input-button contacts__input-button" type="submit" value="отправить">
-          <input type="checkbox" id="checkbox" class="contacts__checkbox">
+          <input class="form__input-button contacts__input-button tab" type="submit" value="отправить">
+          <input type="checkbox" id="checkbox" class="contacts__checkbox tab">
           <label for="checkbox" class="contacts__checkbox-label"> Cогласие на обработку персональных данных</label> 
         </form>
         <div class="contacts__text-blocks-wrapper">
@@ -69,7 +69,7 @@
           </div>
           <div class="contacts__block">
             <h5 class="contacts__header">Доставка</h5>
-            <p class="contacts__text">Заказы, оформляемые на сайте pirogi.ru, принимаются круглосуточно. После получения заказа менеджер свяжется с вами и уточнит состав заказа, его стоимость, время и адрес доставки. Стоимость доставки 300 ₽, при заказе от 5000 ₽ доставка бесплатна. Среднее время доставки курьером 2 часа.
+            <p class="contacts__text">Заказы, оформляемые на сайте pirogi.ru, принимаются круглосуточно. После получения заказа менеджер свяжется с вами и уточнит состав заказа, его стоимость, время и адрес доставки. Стоимость доставки 300 &#8381;, при заказе от 5000 &#8381; доставка бесплатна. Среднее время доставки курьером 2 часа.
             </p>
           </div>
         </div>
@@ -85,62 +85,62 @@
             <p class="footer__contacts-item footer__contacts_mob">Москва, ул. Мечты, 21</p>
           </div>
           <div class="footer__logo-social footer__wrapper-item_mob">
-            <a class="footer__logo-item footer__logo-social_logo-mob" href="../../index.html"><img src="../footer/img/footer-logo.svg" alt="logo"></a>
+            <a class="footer__logo-item footer__logo-social_logo-mob" href="../../index.html" title="logo"><img src="../footer/img/footer-logo.svg" alt="logo"></a>
             <div class="footer__social-items footer__logo-social_social-mob">
-              <a class="footer__social-item" href="#">
+              <a class="footer__social-item" href="#" title="vk">
                 <img class="footer__social-item" src="../footer/img/vk-footer.svg" alt="vk-social"></a>
-              <a class="footer__social-item footer__social-item_position" href="#">
+              <a class="footer__social-item footer__social-item_position" href="#" title="fb">
                 <img class="footer__social-item" src="../footer/img/fb-footer.svg" alt="fb-social"></a>
-              <a class="footer__social-item" href="#">
-                <img class="footer__social-item" src="../footer/img/inst-footer.svg" alt="vk-social"></a>
+              <a class="footer__social-item" href="#" title="inst">
+                <img class="footer__social-item" src="../footer/img/inst-footer.svg" alt="inst-social"></a>
             </div>
           </div>
         </div>
         <div class="footer__wrapper-item">
-          <a class="footer__input footer__wrapper-item_input-pos" href="../../index.html#e-mail">Подписаться на рассылку</a>
+          <a class="footer__input footer__wrapper-item_input-pos" href="../../index.html#e-mail" title="subscribe">Подписаться на рассылку</a>
           <nav class="footer__nav footer__wrapper-item_nav-pos">
             <ul class="footer__nav-items">
-              <li class="footer__nav-item"><a class="footer__nav-link"  href="../catalog/catalog.css">Каталог</a></li>
-              <li class="footer__nav-item"><a class="footer__nav-link" href="../sales/sales.html">Акции</a></li>
-              <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link"  href="../catalog/catalog.css" title="catalog">Каталог</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="../sales/sales.html" title="sales">Акции</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="#" title="contacts">Контакты</a></li>
             </ul>
             <ul class="footer__nav-items">
-              <li class="footer__nav-item"><a class="footer__nav-link" href="../../index.html">О нас</a></li>
-              <li class="footer__nav-item"><a class="footer__nav-link" href="../articles/articles.html">Статьи</a></li>
-              <li class="footer__nav-item"><a class="footer__nav-link" href="../articles/articles.html">Новости</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="../../index.html" title="main-page">О нас</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="../articles/articles.html" title="articles">Статьи</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link" href="../articles/articles.html" title="news">Новости</a></li>
             </ul>
           </nav>
         </div>
       </div>
       <div class="footer__wrapper-desctop">
         <div class="footer__logo-social">
-          <a class="footer__logo-item footer__logo-social_logo-desc" href="../../index.html"><img class="footer__logo-item" src="../footer/img/footer-logo.svg" alt="logo"></a>
+          <a class="footer__logo-item footer__logo-social_logo-desc" href="../../index.html"><img class="footer__logo-item" src="../footer/img/footer-logo.svg" alt="logo" title="logo"></a>
           <div class="footer__social-items">
-            <a class="footer__social-item" href="#">
-              <img class="footer__social-item" src="../footer/img/vk-footer.svg" alt="vk-social">
+            <a class="footer__social-item footer-tab" href="#" title="vk">
+              <img class="footer__social-item footer-tab" src="../footer/img/vk-footer.svg" alt="vk-social">
             </a>
-            <a class="footer__social-item footer__social-item_position" href="#">
+            <a class="footer__social-item footer__social-item_position footer-tab" href="#" title="fb">
               <img class="footer__social-item" src="../footer/img/fb-footer.svg" alt="fb-social">
             </a>
-            <a class="footer__social-item" href="#">
-              <img class="footer__social-item" src="../footer/img/inst-footer.svg" alt="vk-social">
+            <a class="footer__social-item footer-tab" href="#" title="inst">
+              <img class="footer__social-item" src="../footer/img/inst-footer.svg" alt="inst-social">
             </a>
           </div>
         </div>
         <nav class="footer__nav">
           <ul class="footer__nav-items">
-            <li class="footer__nav-item"><a class="footer__nav-link"  href="../catalog/catalog.css">Каталог</a></li>
-            <li class="footer__nav-item"><a class="footer__nav-link" href="../sales/sales.html">Акции</a></li>
-            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link footer-tab"  href="../catalog/catalog.css" title="catalog">Каталог</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link footer-tab" href="../sales/sales.html" title="sales">Акции</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link footer-tab" href="#" title="contacts">Контакты</a></li>
           </ul>
           <ul class="footer__nav-items">
-            <li class="footer__nav-item"><a class="footer__nav-link" href="../../index.html">О нас</a></li>
-            <li class="footer__nav-item"><a class="footer__nav-link" href="../articles/articles.html">Статьи</a></li>
-            <li class="footer__nav-item"><a class="footer__nav-link" href="../articles/articles.html">Новости</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link footer-tab" href="../../index.html" title="main-page">О нас</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link footer-tab" href="../articles/articles.html" title="articles">Статьи</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link footer-tab" href="../articles/articles.html" title="news">Новости</a></li>
           </ul>
         </nav>
         <div class="footer__contacts">
-          <a class="footer__input" href="../../index.html#e-mail">Подписаться на рассылку</a>
+          <a class="footer__input footer-tab" href="../../index.html#e-mail" title="subscribe">Подписаться на рассылку</a>
           <div class = "footer__container">
             <p class="footer__contacts-item">pirogi.support@gmail.com</p>
             <h1 class="footer__contacts-item">+7 (456) 234 36 96</h1>
@@ -150,7 +150,7 @@
       </div>
       <div class="footer__policy">
         <p class="footer__policy-item">Политика конфиденциальности</p>
-        <p class="footer__policy-item">&#169 2021, All rights reserved</p>  
+        <p class="footer__policy-item">&#169; 2021, All rights reserved</p>  
       </div>
     </footer>
   </div>

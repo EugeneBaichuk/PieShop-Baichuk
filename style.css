@@ -110,3 +110,9 @@ html {
 a {
   text-decoration: none;
 }
+
+.tab:focus {
+  outline: 1px solid var(--purple);
+  border-radius: 50px;
+}
+
