@@ -1,3 +1,5 @@
+'use strict';
+
 const form = document.querySelector('.contacts__form');
 const checkbox = document.querySelector('.contacts__checkbox');
 

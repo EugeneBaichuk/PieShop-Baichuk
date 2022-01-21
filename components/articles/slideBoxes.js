@@ -1,3 +1,5 @@
+'use strict';
+
 const boxes = document.querySelectorAll('.stages__img');
 
 window.addEventListener('scroll', slideBoxes);

@@ -1,4 +1,5 @@
 'use strict';
+
 const leftBtn = document.getElementById('left');
 const rightBtn = document.getElementById('right');
 const imgs = document.getElementById('imgs');

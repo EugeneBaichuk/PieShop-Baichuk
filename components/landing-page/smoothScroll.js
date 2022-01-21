@@ -1,3 +1,5 @@
+'use strict';
+
 const mainScroll = document.getElementById('scroll-top-btn');
 const footerBtn = document.querySelectorAll('.footer__input');
 

@@ -12,5 +12,4 @@ sliderBtns.forEach(item => {
     sliderLink.classList.toggle('slider__link_disabled');
     sliderLinkInner.classList.toggle('slider__link_disabled');
   });
-
 });
