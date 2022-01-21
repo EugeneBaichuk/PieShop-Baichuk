@@ -10,7 +10,7 @@ window.addEventListener('scroll', showScrollBtn);
 function showScrollBtn() {
   const trigger = document.documentElement.scrollTop;
 
-  if (trigger > 300) {
+  if (trigger > 550) {
     mainScroll.classList.add('scroll-btn_show');
   } else {
     mainScroll.classList.remove('scroll-btn_show');

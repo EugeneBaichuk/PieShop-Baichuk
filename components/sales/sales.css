@@ -31,10 +31,10 @@
   display: flex;
   justify-content: center;
   flex-flow: wrap;
-  margin: 0 0 3.125rem;
+  margin: 0 1rem 3.125rem;
 }
 
-@media screen and (min-width: 77.8rem) {
+@media screen and (min-width: 80rem) {
   .sales-container__wrapper {
   justify-content: space-between;
   }
@@ -49,7 +49,7 @@
 }
 
 .sales-container__card {
-  width: 17.5rem;
+  width: 19rem;
   margin: 0 0.5rem 1rem;
   padding: 15px 20px;
   background-color: var(--sales-card-color);
@@ -91,13 +91,13 @@
   color: var(--sales-container-content-color);
 }
 
-@media (min-width: 35rem) {
+@media (min-width: 37rem) {
   .sales-container__page-header {
     margin: 8.125rem 0 3.4375rem;
   }
 
   .sales-container__card {
-    width: 35.375rem;
+    width: 37rem;
     padding: 30px 40px;
     margin: 0 0.5rem 1.875rem;
   }

@@ -285,8 +285,9 @@
   }
 
   .main-screen {
-    background: url(img/pie-background-desc.png) center;
+    background: url(img/pie-background-desc.png) center top;
     background-size: cover;
+    background-attachment: fixed;
   }
 
   .pie-shop-adv {
