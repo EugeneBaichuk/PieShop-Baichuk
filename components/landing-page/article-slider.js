@@ -6,7 +6,6 @@ const imgs = document.getElementById('imgs');
 const img = document.querySelectorAll('#imgs a');
 
 let idx = 0;
-
 //let interval = setInterval(run, 2000);
 
 function run() {

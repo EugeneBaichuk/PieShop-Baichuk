@@ -82,10 +82,10 @@
 .pie-shop-adv__paragraph {
   color: var(--main-header-color);
   font-family: "LifehackBasicRegular", sans-serif;
-  font-size: 1.875rem;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.875rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
 }
 
 .pie-shop-adv__small-paragraph {
@@ -95,7 +95,6 @@
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.1875rem;
 }
 
 .scroll-btn {
@@ -253,6 +252,11 @@
 }
 
 @media screen and (min-width: 35rem) {
+  .pie-shop-adv__paragraph {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
   .scroll-btn {
     display: block;
     position: fixed;
@@ -295,20 +299,10 @@
   }
 
   .pie-shop-adv__header {
-    padding: 3.125rem 0 0;
+    margin: 0;
+    padding: 2rem 0 0;
     font-size: 2.5rem;
     line-height: 3rem;
-  }
-
-  .pie-shop-adv__paragraph {
-    font-size: 4.375rem;
-    line-height: 4.375rem;
-  }
-
-  .pie-shop-adv__small-paragraph {
-    margin: 1.4375rem 0 0;
-    font-size: 1rem;
-    line-height: 1.1875rem;
   }
 
   .main-screen__button {
@@ -321,8 +315,7 @@
 
   .pie-shop-adv__small-paragraph {
     margin: 1.4375rem 0 0;
-    font-size: 1.5rem;
-    line-height: 1.75rem;
+    font-size: 1.3rem;
   }
 
   .main-screen__block {
@@ -688,9 +681,14 @@
 }
 
 @media (min-width: 62rem) {
-   .landing-card__last-article {
-     display: block;
-   }
+  .pie-shop-adv__paragraph {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+
+  .landing-card__last-article {
+    display: block;
+  }
 
   .article__slider-container {
     position: absolute;

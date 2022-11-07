@@ -44,10 +44,10 @@
   color: var(--catalog-button-mobile-text-color);
   box-shadow: inset 0 0 0 2px var(--catalog-button-color);
   border-radius: 15px;
-  font-family: "Lifehack Sans", sans-serif;
+  font-family: "LifehackSansRegular", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 30px;
   text-align: center;
   transition: background 0.2s ease, color 0.2s ease;
@@ -82,7 +82,7 @@
     margin: 0 0 1rem;
     background: transparent;
     color: var(--catalog-button-color);
-    font-size: 40px;
+    font-weight: 550;
     line-height: 48px;
   }
 

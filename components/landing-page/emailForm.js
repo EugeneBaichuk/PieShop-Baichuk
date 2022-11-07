@@ -33,6 +33,6 @@ form.addEventListener('submit', event => {
       form.reset();
     })
     .catch(error => {
-      console.dir(error);
+      console.error(error);
     });
 });
